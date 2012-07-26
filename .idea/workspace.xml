@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="de3e0f47-bbc4-4940-a25f-beb357d32df8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
+    <list id="e1c33006-d114-445a-870f-f8094d3be088" name="Ignore" comment="" />
     <ignored path="tfmgr.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -81,7 +84,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="12" selection-start="829" selection-end="829" vertical-scroll-proportion="0.8310811">
+            <state line="14" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.2837838">
               <folding />
             </state>
           </provider>
@@ -602,6 +605,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="e1c33006-d114-445a-870f-f8094d3be088" name="Ignore" comment="" />
       <created>1343341704859</created>
       <updated>1343341704859</updated>
     </task>
@@ -613,7 +617,11 @@
       <created>1343343461800</created>
       <updated>1343343461800</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add thin&#10;">
+      <created>1343343469225</created>
+      <updated>1343343469225</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -774,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="12" selection-start="829" selection-end="829" vertical-scroll-proportion="0.8310811">
+        <state line="14" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.2837838">
           <folding />
         </state>
       </provider>
