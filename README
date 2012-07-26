@@ -1,3 +1,5 @@
 jacek@jacek:~/devel/tfmgr$ heroku create
-Creating blooming-depths-3780... done, stack is cedar
-http://blooming-depths-3780.herokuapp.com/ | git@heroku.com:blooming-depths-3780.git
+
+Creating intense-savannah-6709... done, stack is cedar
+http://intense-savannah-6709.herokuapp.com/ | git@heroku.com:intense-savannah-6709.git
+Git remote heroku added
