@@ -1,8 +1,0 @@
-jacek@jacek:~/devel/tfmgr$ heroku create
-
-Creating intense-savannah-6709... done, stack is cedar
-http://intense-savannah-6709.herokuapp.com/ | git@heroku.com:intense-savannah-6709.git
-Git remote heroku added
-
-URL:
-http://intense-savannah-6709.herokuapp.com
