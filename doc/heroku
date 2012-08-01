@@ -4,6 +4,10 @@ http://tfmgr.herokuapp.com
 CURRENT NAME:
 tfmgr
 
+Pushinng:
+
+    git push heroku master
+
 Renaming an app:
 
     heroku apps:rename newname
