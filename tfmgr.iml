@@ -39,6 +39,7 @@
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="eventmachine (v0.12.10, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v1.4.0, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="haml (v3.1.7, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.1, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.0, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="journey (v1.0.4, RVM: ruby-1.9.3-p194 [tfmgr]) [gem]" level="application" />
