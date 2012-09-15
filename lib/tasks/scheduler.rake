@@ -1,11 +1,11 @@
-require "heroku"
+require "heroku-api"
 
-USER = 'jacek.szlachta@gmail.com'
-PASSWORD = 'junak350'
+API_KEY = 'ff168fd3606f0727348d73a5a843272c523459aa'
 APP_NAME = 'tfmgr'
 
+# to test run: heroku run rake scale[0]
 desc "Scale dynos"
-task :scale, :num_of_instances do |t, args|
-  heroku = Heroku::Client.new(USER, PASSWORD)
-  heroku.ps_scale(APP_NAME, :type=>'web', :qty=>args[:num_of_instances])
+task :scale, :instances do |t, args|
+  heroku = Heroku::API.new api_key: API_KEY
+  heroku.post_ps_scale(APP_NAME, 'web', args[:instances])
 end
