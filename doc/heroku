@@ -28,3 +28,7 @@ Local development
 Scheduler
 
     see lib/tasks/scheduler.rake
+
+Time zone
+
+    heroku config:add TZ=Europe/London
