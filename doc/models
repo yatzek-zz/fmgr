@@ -1,0 +1,25 @@
+Supported types:
+
+:binary
+:boolean
+:date
+:datetime
+:decimal
+:float
+:integer
+:primary_key
+:string
+:text
+:time
+:timestamp
+
+
+# Models:
+
+rails generate model Player id:primary_key name:string surname:string email:string
+
+rails generate scaffold Player id:primary_key name:string surname:string email:string
+
+# Controllers
+
+rails generate controller home index
