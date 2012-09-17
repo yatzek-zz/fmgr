@@ -17,7 +17,7 @@ Player.create(name: 'Krishan', surname: 'Lakha', email: 'Krishan.Lakha@bskyb.com
 Player.create(name: 'John', surname: 'Boyes', email: 'John.Boyes@bskyb.com')
 Player.create(name: 'Nauman', surname: 'Khan', email: 'Nauman.Khan@bskyb.com')
 Player.create(name: 'Seb', surname: 'Briggs', email: 'Seb.Briggs@bskyb.com')
-Player.create(name: 'Paul', surname: 'Murphy2', email: 'Paul.Murphy2@bskyb.com')
+Player.create(name: 'Paul', surname: 'Murphy', email: 'Paul.Murphy2@bskyb.com')
 Player.create(name: 'Himanshu', surname: 'Kohli', email: 'Himanshu.Kohli@bskyb.com')
 Player.create(name: 'Nigel', surname: 'Pepper', email: 'Nigel.Pepper@bskyb.com')
 Player.create(name: 'Jacob', surname: 'Farrugia', email: 'Jacob.Farrugia@bskyb.com')
