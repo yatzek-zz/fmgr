@@ -23,3 +23,7 @@ rails generate scaffold Player id:primary_key name:string surname:string email:s
 # Controllers
 
 rails generate controller home index
+
+# Mailers
+
+rails generate mailer PlayerMailer

@@ -80,4 +80,14 @@ class PlayersController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # Mailer
+
+  # Tell the UserMailer to send a welcome Email after save
+  def send_notification_emails
+    players = Player.find_all_by_surname 'Szlachta' # TODO: change to: Player.all
+    players.each do |player|
+      PlayerMailer.deliver_notification_email player
+    end
+  end
 end
