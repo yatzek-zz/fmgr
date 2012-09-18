@@ -9,3 +9,9 @@ task :scale, :instances do |t, args|
   heroku = Heroku::API.new api_key: API_KEY
   heroku.post_ps_scale(APP_NAME, 'web', args[:instances])
 end
+
+
+desc "send notification emails task"
+task :send_notifications => :environment do
+  PlayersController.send_notification_emails
+end
