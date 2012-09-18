@@ -13,5 +13,6 @@ end
 
 desc "send notification emails task"
 task :send_notifications => :environment do
-  PlayersController.send_notification_emails
+  controller = PlayersController.new
+  controller.send_notification_emails
 end
