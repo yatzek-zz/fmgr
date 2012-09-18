@@ -87,7 +87,7 @@ class PlayersController < ApplicationController
   def send_notification_emails
     players = Player.find_all_by_surname 'Szlachta' # TODO: change to: Player.all
     players.each do |player|
-      PlayerMailer.deliver_notification_email player
+      PlayerMailer.notification_email(player).deliver
     end
   end
 end

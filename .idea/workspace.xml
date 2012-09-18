@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6b31dccd-000c-415a-9035-118b4c88b539" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/scheduler.rake" afterPath="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" />
     </list>
     <ignored path="tfmgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,10 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scheduler.rake" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scheduler.rake" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="22" selection-start="439" selection-end="439" vertical-scroll-proportion="0.31509846">
+            <state line="16" column="26" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,7 +88,7 @@
       <file leaf-file-name="player_mailer.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/mailers/player_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+            <state line="15" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -112,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="players_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="players_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="6" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0">
+            <state line="89" column="31" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.80306345">
               <folding />
             </state>
           </provider>
@@ -174,9 +174,9 @@
         <option value="$PROJECT_DIR$/app/helpers/players_helper.rb" />
         <option value="$PROJECT_DIR$/doc/models" />
         <option value="$PROJECT_DIR$/app/views/player_mailer/notification_email.text.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
         <option value="$PROJECT_DIR$/app/mailers/player_mailer.rb" />
         <option value="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
+        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
       </list>
     </option>
   </component>
@@ -943,7 +943,11 @@
       <created>1348006700190</created>
       <updated>1348006700190</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="action mailer">
+      <created>1348007019220</created>
+      <updated>1348007019220</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1156,23 +1160,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="26" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/mailers/player_mailer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+        <state line="15" column="6" selection-start="535" selection-end="535" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="6" selection-start="2049" selection-end="2049" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="22" selection-start="439" selection-end="439" vertical-scroll-proportion="0.31509846">
+        <state line="89" column="31" selection-start="2216" selection-end="2216" vertical-scroll-proportion="0.80306345">
           <folding />
         </state>
       </provider>
