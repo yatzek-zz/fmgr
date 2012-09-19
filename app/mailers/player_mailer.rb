@@ -10,8 +10,8 @@ ActionMailer::Base.smtp_settings = {
 ActionMailer::Base.delivery_method = :smtp
 
 class PlayerMailer < ActionMailer::Base
+  include PlayersHelper
   default from: "noreply@tfmgr.heroku.com"
-
 
   def notification_email(player)
     #@player = player
