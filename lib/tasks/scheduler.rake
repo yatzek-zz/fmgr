@@ -24,14 +24,3 @@ task :send_emails_on_thursday => :environment do
     controller.send_notification_emails
   end
 end
-
-desc "test encryptor gem"
-require "encryptor"
-require "base64"
-Encryptor.default_options.merge!(:key => Digest::SHA256.hexdigest('very secret'))
-task :test_encryption => :environment do
-  enc = "test string".encrypt
-  puts Base64.urlsafe_encode64 enc
-  puts enc
-  puts enc.decrypt
-end
