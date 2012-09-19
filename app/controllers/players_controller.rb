@@ -81,9 +81,13 @@ class PlayersController < ApplicationController
     end
   end
 
-  # Mailer
+  def confirm
+    # get playerid
+    # insert into table
+    # display confirmation
+  end
 
-  # Tell the UserMailer to send a welcome Email after save
+  # Mailer
   def send_notification_emails
     players = Player.find_all_by_surname 'Szlachta' # TODO: change to: Player.all
     players.each do |player|

@@ -11,8 +11,27 @@ task :scale, :instances do |t, args|
 end
 
 
-desc "send notification emails task"
+desc "send notification emails testing task"
 task :send_notifications => :environment do
   controller = PlayersController.new
   controller.send_notification_emails
+end
+
+desc "send notification emails on thursday task"
+task :send_emails_on_thursday => :environment do
+  if Time.now.thursday?
+    controller = PlayersController.new
+    controller.send_notification_emails
+  end
+end
+
+desc "test encryptor gem"
+require "encryptor"
+require "base64"
+Encryptor.default_options.merge!(:key => Digest::SHA256.hexdigest('very secret'))
+task :test_encryption => :environment do
+  enc = "test string".encrypt
+  puts Base64.urlsafe_encode64 enc
+  puts enc
+  puts enc.decrypt
 end
