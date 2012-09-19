@@ -4,6 +4,7 @@
     <list default="true" id="6b31dccd-000c-415a-9035-118b4c88b539" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/players_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/players_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/mailers/player_mailer.rb" afterPath="$PROJECT_DIR$/app/mailers/player_mailer.rb" />
     </list>
     <ignored path="tfmgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player_mailer.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="player_mailer.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/mailers/player_mailer.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="57" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
+            <state line="18" column="77" selection-start="710" selection-end="710" vertical-scroll-proportion="0.35448578">
               <folding />
             </state>
           </provider>
@@ -103,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="players_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="players_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/players_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="53" selection-start="312" selection-end="312" vertical-scroll-proportion="0.21663019">
+            <state line="6" column="6" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,8 +167,8 @@
         <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
-        <option value="$PROJECT_DIR$/app/mailers/player_mailer.rb" />
         <option value="$PROJECT_DIR$/app/helpers/players_helper.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/player_mailer.rb" />
       </list>
     </option>
   </component>
@@ -1091,7 +1092,11 @@
       <created>1348090688224</created>
       <updated>1348090688224</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="player id encryption">
+      <created>1348091002268</created>
+      <updated>1348091002268</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1099,7 +1104,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6712428" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31988677" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31988677" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1304,13 +1309,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/player_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="57" selection-start="690" selection-end="690" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@tfmgr/gems/encryptor-1.1.3/lib/encryptor.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="6" selection-start="950" selection-end="950" vertical-scroll-proportion="0.33296338">
@@ -1320,7 +1318,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/players_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="53" selection-start="312" selection-end="312" vertical-scroll-proportion="0.21663019">
+        <state line="6" column="6" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/player_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="77" selection-start="710" selection-end="710" vertical-scroll-proportion="0.35448578">
           <folding />
         </state>
       </provider>
