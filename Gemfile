@@ -22,6 +22,7 @@ gem 'jquery-rails'
 gem 'thin'
 
 gem 'heroku-api'
+gem 'encryptor'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
