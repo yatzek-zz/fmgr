@@ -1,29 +1,56 @@
-Supported types:
-
-:binary
-:boolean
-:date
-:datetime
-:decimal
-:float
-:integer
-:primary_key
-:string
-:text
-:time
-:timestamp
 
 
 # Models:
 
-rails generate model Player id:primary_key name:string surname:string email:string
+    rails generate model Player id:primary_key name:string surname:string email:string
 
-rails generate scaffold Player id:primary_key name:string surname:string email:string
+    rails generate scaffold Player id:primary_key name:string surname:string email:string
+
+    rails generate model Game id:primary_key player_id:integer
 
 # Controllers
 
-rails generate controller home index
+    rails generate controller home index
 
 # Mailers
 
-rails generate mailer PlayerMailer
+    rails generate mailer PlayerMailer
+
+Migrations
+
+    http://guides.rubyonrails.org/migrations.html
+
+    # standalone migration
+
+    rails generate migration AddPartNumberToProducts part_number:string
+
+    Migration methods:
+
+    add_column
+    add_index
+    change_column
+    change_table
+    create_table
+    drop_table
+    remove_column
+    remove_index
+    rename_column
+
+    Migrations supported types (will be mapped onto an appropriate underlying database type):
+
+    :binary
+    :boolean
+    :date
+    :datetime
+    :decimal
+    :float
+    :integer
+    :primary_key
+    :string
+    :text
+    :time
+    :timestamp
+
+
+    Writing migrations
+    :id => false        (id you don’t want a primary key at all - by default id column)
