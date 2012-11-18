@@ -27,7 +27,7 @@ test:
 
 production:
   adapter: em_postgresql
-  encoding: unicode
+#  encoding: unicode
 #  database: tfmgr
   pool: 5
-  timeout: 5000
+#  timeout: 5000
