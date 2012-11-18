@@ -34,4 +34,6 @@ Tfmgr::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  config.middleware.insert_before ActionDispatch::Static, Rack::FiberPool, :size => 100
 end
