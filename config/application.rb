@@ -13,7 +13,7 @@ end
 module Tfmgr
   class Application < Rails::Application
 
-    #config.middleware.delete Rack::Lock
+    # same effect as config.middleware.delete Rack::Lock
     config.threadsafe!
 
     # Settings in config/environments/* take precedence over those specified here.
