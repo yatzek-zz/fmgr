@@ -25,9 +25,9 @@ test:
 # heroku db has to be configured from the command line and is being picked up
 # by means of env variables - no need for configuration here
 
-production:
-  adapter: em_postgresql
+#production:
+#  adapter: em_postgresql
 #  encoding: unicode
 #  database: tfmgr
-  pool: 5
+#  pool: 5
 #  timeout: 5000
