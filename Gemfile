@@ -25,10 +25,11 @@ gem 'encryptor'
 gem 'rack-fiber_pool'
 gem 'em-synchrony'
 gem 'thin'
-gem 'faraday'
-
 gem 'pg'
 gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
+
+#gem 'faraday'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
