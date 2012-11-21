@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6b31dccd-000c-415a-9035-118b4c88b539" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/heroku" afterPath="$PROJECT_DIR$/doc/heroku" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/tasks/scheduler.rake" afterPath="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
     </list>
     <ignored path="tfmgr.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,10 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="0.23194748">
+            <state line="17" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="-12.24">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scheduler.rake" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="7" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heroku" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="heroku" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/doc/heroku">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="72" selection-start="215" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="50" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.98039216">
               <folding />
             </state>
           </provider>
@@ -162,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
         <option value="$PROJECT_DIR$/app/helpers/players_helper.rb" />
         <option value="$PROJECT_DIR$/app/mailers/player_mailer.rb" />
         <option value="$PROJECT_DIR$/doc/models" />
@@ -173,11 +182,12 @@
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/doc/heroku" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/lib/tasks/scheduler.rake" />
+        <option value="$PROJECT_DIR$/doc/heroku" />
       </list>
     </option>
   </component>
@@ -445,24 +455,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1087,7 +1079,11 @@
       <created>1353536658972</created>
       <updated>1353536658972</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="JS: non-blocking postgres">
+      <created>1353538161000</created>
+      <updated>1353538161000</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1222,11 +1218,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/script/rails">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p194@tfmgr/gems/activerecord-3.2.3/lib/active_record/connection_adapters/abstract/database_statements.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="10" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.4498382" />
@@ -1240,18 +1231,6 @@
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="131" selection-start="1462" selection-end="1462" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/models">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/heroku">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="72" selection-start="215" selection-end="248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20120917211847_create_players.rb">
@@ -1317,7 +1296,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="0.23194748">
+        <state line="17" column="4" selection-start="523" selection-end="523" vertical-scroll-proportion="-12.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/tasks/scheduler.rake">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="7" selection-start="677" selection-end="677" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/models">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/heroku">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="0" selection-start="811" selection-end="811" vertical-scroll-proportion="0.98039216">
           <folding />
         </state>
       </provider>

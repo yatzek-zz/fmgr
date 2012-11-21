@@ -45,45 +45,6 @@ NON BLOCKING PG ADAPTER:
     https://github.com/leftbee/em-postgresql-adapter
 
 
-ENV:
+ENV to set:
 
-$ heroku run env
-
-HEROKU_POSTGRESQL_BLUE_URL=postgres://ekobbwzvfmojit:RDXuWH8P0YBBQEd2IX30yPRKrp@ec2-107-21-250-130.compute-1.amazonaws.com:5432/d8u2rkge1cbhrb
-HEROKU_POSTGRESQL_ORANGE_URL=postgres://ogvsccniofzbrf:akDuXPR0VuIdGZQB9iVo71mVl4@ec2-54-243-229-185.compute-1.amazonaws.com:5432/d3pm6a16gmkefq
-DATABASE_URL=postgres://ekobbwzvfmojit:RDXuWH8P0YBBQEd2IX30yPRKrp@ec2-107-21-250-130.compute-1.amazonaws.com:5432/d8u2rkge1cbhrb
-
-
-IRON_WORKER_TOKEN=MDX91zI0x45a5wiD0zXOq2rv0CU
-TERM=xterm
-
-MEMCACHIER_PASSWORD=ea9671e4916de696d547
-PUSHER_URL=http://fe46ebe1d580ee53c975:f16e161b97c338ebc380@api.pusherapp.com/apps/25093
-PUSHER_SOCKET_URL=ws://ws.pusherapp.com:80/app/fe46ebe1d580ee53c975
-PGBACKUPS_URL=https://31034:6xo52bvvm21yt1g6j1yb63prf@pgbackups.heroku.com/client
-REDISTOGO_URL=redis://redistogo:c706aae02124a48e878a50fe966754a6@perch.redistogo.com:9094/
-COLUMNS=138
-RACK_ENV=production
-MAILGUN_SMTP_LOGIN=postmaster@app6194869.mailgun.org
-MEMCACHE_USERNAME=app6194869%40heroku.com
-MAILGUN_SMTP_SERVER=smtp.mailgun.org
-IRON_WORKER_PROJECT_ID=5019aa480008f202df0030e2
-MAILGUN_SMTP_PASSWORD=8vhj9qk9ekx0
-PATH=bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
-SCHEDULER_URL=http://7r5opdc8kawccr4dbspiuronl@heroku-scheduler.herokuapp.com/
-PWD=/app
-LANG=en_US.UTF-8
-TZ=Europe/London
-PS1=\[\033[01;34m\]\w\[\033[00m\] \[\033[01;32m\]$ \[\033[00m\]
-LINES=41
-MEMCACHIER_USERNAME=366ddc
-SHLVL=1
-HOME=/app
-MEMCACHE_SERVERS=mc5.ec2.northscale.net
-RAILS_ENV=production
-MAILGUN_API_KEY=key-25i9qqp0b3tcl0o4v90xbsoom1vcuy81
-GEM_PATH=vendor/bundle/ruby/1.9.1
-PORT=38370
-MEMCACHIER_SERVERS=mc2.ec2.memcachier.com:11211
-MEMCACHE_PASSWORD=M1b7/EUbvGWqa907
-MAILGUN_SMTP_PORT=587
+    TZ=Europe/London
