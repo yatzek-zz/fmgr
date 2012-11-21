@@ -14,6 +14,7 @@ module Tfmgr
   class Application < Rails::Application
 
     # same effect as config.middleware.delete Rack::Lock
+    config.middleware.insert_before ActionDispatch::Static, Rack::FiberPool, :size => 100
     config.threadsafe!
     config.assets.initialize_on_precompile = false
 
