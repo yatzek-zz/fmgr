@@ -25,8 +25,8 @@ gem 'encryptor'
 gem 'rack-fiber_pool'
 gem 'thin'
 gem 'pg'
-#gem 'em-synchrony'
-#gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
+gem 'em-synchrony'
+gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 
 #gem 'faraday'
 

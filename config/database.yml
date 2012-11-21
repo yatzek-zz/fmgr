@@ -4,8 +4,8 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: postgresql
-#  adapter: em_postgresql
+#  adapter: postgresql
+  adapter: em_postgresql
   encoding: unicode
   database: tfmgr
   username: jacek
@@ -17,8 +17,8 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: postgresql
-#  adapter: em_postgresql
+#  adapter: postgresql
+  adapter: em_postgresql
   database: db/test.sqlite3
   pool: 5
   timeout: 5000
@@ -26,8 +26,8 @@ test:
 # heroku db has to be configured from the command line and is being picked up
 # by means of env variables - no need for configuration here
 production:
-  adapter: postgresql
-#  adapter: em_postgresql
+#  adapter: postgresql
+  adapter: em_postgresql
   encoding: unicode
   database: tfmgr
   pool: 5
