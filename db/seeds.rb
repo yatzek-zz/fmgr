@@ -8,6 +8,9 @@
 
 
 # Players
+require "player"
+
+
 Player.delete_all
 
 Player.create(name: 'Jakub', surname: 'Witkiewicz', email: 'Jakub.Witkiewicz@gbskyb.com')
