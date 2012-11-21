@@ -13,10 +13,10 @@ end
 module Tfmgr
   class Application < Rails::Application
 
-    # same effect as config.middleware.delete Rack::Lock
-    config.middleware.insert_before ActionDispatch::Static, Rack::FiberPool, :size => 100
-    config.threadsafe!
-    config.assets.initialize_on_precompile = false
+
+    config.middleware.insert_before ActionDispatch::Static, Rack::FiberPool, :size => 100 # non blocking pg
+    config.threadsafe! # same effect as config.middleware.delete Rack::Lock
+    config.assets.initialize_on_precompile = false # error when delploying to heroku
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
