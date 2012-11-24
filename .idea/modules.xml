@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/tfmgr.iml" filepath="$PROJECT_DIR$/tfmgr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fmgr.iml" filepath="$PROJECT_DIR$/fmgr.iml" />
     </modules>
   </component>
 </project>
