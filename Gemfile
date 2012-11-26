@@ -37,9 +37,10 @@ group :development, :test do
 end
 
 group :test do
+  gem 'sqlite3'
   gem 'faker'
-  gem 'capybara'
   gem 'database_cleaner'
+  gem 'capybara'
   gem 'launchy'
 end
 
