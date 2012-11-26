@@ -97,6 +97,7 @@ GEM
     method_source (0.8.1)
     mime-types (1.19)
     multi_json (1.3.7)
+    nokogiri (1.5.5)
     pg (0.14.1)
     polyglot (0.3.3)
     pry (0.9.10)
@@ -188,6 +189,7 @@ DEPENDENCIES
   heroku-api
   jquery-rails
   launchy
+  nokogiri
   pg
   rack-fiber_pool
   rails (= 3.2.3)
