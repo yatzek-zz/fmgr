@@ -197,7 +197,7 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
-  coffee-rails
+  coffee-rails (~> 3.2.1)
   database_cleaner
   em-postgresql-adapter!
   em-synchrony
@@ -212,9 +212,9 @@ DEPENDENCIES
   nokogiri
   pg
   rack-fiber_pool
-  rails
+  rails (= 3.2.3)
   rspec-rails
-  sass-rails
+  sass-rails (~> 3.2.3)
   sqlite3
   therubyracer
   thin
