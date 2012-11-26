@@ -1,5 +1,5 @@
 class Player < ActiveRecord::Base
 
-  attr_accessible :email, :id, :name, :surname
+  attr_accessible :id, :name, :surname, :email
 
 end
