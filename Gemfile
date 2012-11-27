@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-
+source :rubygems
 
 ruby '1.9.3'
 gem 'rails'  #, '3.2.3'
@@ -27,8 +26,6 @@ gem 'pg'
 gem 'em-synchrony'
 gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 
-#gem 'faraday'
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
@@ -54,9 +51,6 @@ end
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
 
 # To use debugger
 #gem 'ruby-debug19', :require => 'ruby-debug'
