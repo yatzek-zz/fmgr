@@ -13,6 +13,8 @@ end
 
 desc "send notification emails testing task"
 task :send_notifications => :environment do
+  players = Player.find_all_by_surname 'Szlachta'
+  p players
   controller = PlayersController.new
   controller.send_notification_emails
 end
