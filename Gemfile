@@ -20,11 +20,11 @@ gem 'jquery-rails'
 gem 'heroku-api'
 gem 'encryptor'
 
-gem 'rack-fiber_pool'
 gem 'thin'
 gem 'pg'
-gem 'em-synchrony'
-gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
+#gem 'rack-fiber_pool'
+#gem 'em-synchrony'
+#gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 
 group :development, :test do
   gem 'rspec-rails'
