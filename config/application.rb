@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require "rack/fiber_pool"
+#require "rack/fiber_pool"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
@@ -14,7 +14,7 @@ module Tfmgr
   class Application < Rails::Application
 
 
-    config.middleware.insert_before ActionDispatch::Static, Rack::FiberPool, :size => 100 # non blocking pg
+    #config.middleware.insert_before ActionDispatch::Static, Rack::FiberPool, :size => 100 # non blocking pg
     config.threadsafe! # same effect as config.middleware.delete Rack::Lock
     config.assets.initialize_on_precompile = false # asset pipeline error when delploying to heroku
 

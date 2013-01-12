@@ -4,9 +4,9 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-#  adapter: postgresql
+  adapter: postgresql
 #  adapter: em_postgresql
-  adapter: empostgresql
+#  adapter: empostgresql
   encoding: unicode
   database: tfmgr
   username: jacek
@@ -26,9 +26,9 @@ test:
 # heroku db has to be configured from the command line and is being picked up
 # by means of env variables - no need for configuration here
 production:
-#  adapter: postgresql
+  adapter: postgresql
 #  adapter: em_postgresql
-  adapter: empostgresql
+#  adapter: empostgresql
   encoding: unicode
   database: tfmgr
   pool: 5
