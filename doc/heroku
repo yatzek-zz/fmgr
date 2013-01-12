@@ -48,3 +48,7 @@ NON BLOCKING PG ADAPTER:
 ENV to set:
 
     TZ=Europe/London
+
+Scheduler:
+
+    scaling: crate two tasks: rake scale[0] and rake scale[1] at the of choice
