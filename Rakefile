@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Tfmgr::Application.load_tasks
+Fmgr::Application.load_tasks

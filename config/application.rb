@@ -10,7 +10,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Tfmgr
+module Fmgr
   class Application < Rails::Application
 
 

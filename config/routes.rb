@@ -1,4 +1,4 @@
-Tfmgr::Application.routes.draw do
+Fmgr::Application.routes.draw do
 
   resources :players
 
