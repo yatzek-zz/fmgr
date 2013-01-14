@@ -1,9 +1,7 @@
-# Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :game do
-    id ""
-    day "MyString"
-    time "2012-11-27 23:43:20"
+  factory :game_definition do
+    day "tue"
+    time "12:00"
   end
 end

@@ -16,8 +16,9 @@ class PlayerMailer < ActionMailer::Base
   def notification_email(player)
     #@player = player
     # TODO: click action
+    # TODO: date of game
     @url  = "http://fmgr.herokuapp.com/play/#{url_safe_encode(player.id.to_s)}"
-    mail(:to => player.email, :subject => "Want to play 5-a-side on Tuesday?")
+    mail(:to => player.email, :subject => "Want to play 5-a-side?")
   end
 
 end

@@ -35,6 +35,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.2.2, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.0.1, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.3.6, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="chronic (v0.9.0, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.0.8, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v3.2.2, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
@@ -97,6 +98,7 @@
     <orderEntry type="library" scope="PROVIDED" name="thin (v1.5.0, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.16.0, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.3.3, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="timecop (v0.5.9, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.12, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v0.3.35, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v1.3.0, RVM: ruby-1.9.3-p194 [fmgr]) [gem]" level="application" />

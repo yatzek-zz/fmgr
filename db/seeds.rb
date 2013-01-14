@@ -9,7 +9,11 @@
 
 # Players
 require "player"
+require "game_definition"
 
+GameDefinition.delete_all
+
+GameDefinition.create(day: 'tue', time: '12:00')
 
 Player.delete_all
 

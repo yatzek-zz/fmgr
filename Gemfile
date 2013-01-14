@@ -26,6 +26,8 @@ gem 'pg'
 #gem 'em-synchrony'
 #gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 
+gem 'chronic'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
@@ -40,6 +42,7 @@ group :test do
   gem 'nokogiri'
   gem 'xpath'
   gem 'launchy'
+  gem 'timecop'
 end
 
 
