@@ -8,7 +8,7 @@ development:
 #  adapter: em_postgresql
 #  adapter: empostgresql
   encoding: unicode
-  database: tfmgr
+  database: fmgr
   username: jacek
   password:
   pool: 5
@@ -23,6 +23,15 @@ test:
   pool: 5
   timeout: 5000
 
+#test:
+#  adapter: postgresql
+#  database: fmgr_test
+#  username: jacek
+#  password:
+#  pool: 5
+#  timeout: 5000
+
+
 # heroku db has to be configured from the command line and is being picked up
 # by means of env variables - no need for configuration here
 production:
@@ -30,7 +39,7 @@ production:
 #  adapter: em_postgresql
 #  adapter: empostgresql
   encoding: unicode
-  database: tfmgr
+  database: fmgr
   pool: 5
   timeout: 5000
 
