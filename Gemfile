@@ -27,6 +27,7 @@ gem 'pg'
 #gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 
 gem 'chronic'
+gem 'encryptor'
 
 group :development, :test do
   gem 'rspec-rails'

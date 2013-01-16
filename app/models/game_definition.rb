@@ -28,7 +28,6 @@ class GameDefinition < ActiveRecord::Base
         # if next game instance does not exist yet
         unless game_instance && game_instance.time == next_game_time
           GameInstance.create(game_definition: game_definition, time: game_definition.next_game_time)
-          # TODO: send emails here???
         end
 
       end
