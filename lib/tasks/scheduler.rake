@@ -24,3 +24,8 @@ task :send_emails_on_thursday => :environment do
     controller.send_notification_emails
   end
 end
+
+desc "game instances periodic task"
+task :create_game_instances => :environment do
+  GameDefinition.create_game_instances
+end
