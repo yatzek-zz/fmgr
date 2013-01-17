@@ -1,5 +1,5 @@
 class GameInstance < ActiveRecord::Base
-  attr_accessible :time, :game_definition
+  attr_accessible :time, :game_definition, :emails_sent
   validates :time, :game_definition, :presence => true
 
   validates :time, :uniqueness => {:scope => :game_definition_id }
