@@ -32,17 +32,23 @@ gem 'encryptor'
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+
+  gem 'rb-inotify'
+  #gem 'libnotify' - annoying windows-like notifications
   gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'rack-livereload'
+
+  gem 'capybara'
+  gem 'launchy'
 end
 
 group :test do
   gem 'sqlite3'
   gem 'faker'
   gem 'database_cleaner'
-  gem 'capybara'
   gem 'nokogiri'
   gem 'xpath'
-  gem 'launchy'
   gem 'timecop'
 end
 

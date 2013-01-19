@@ -81,17 +81,16 @@ class PlayersController < ApplicationController
     end
   end
 
-  def confirm
-    # get playerid
-    # insert into table
-    # display confirmation
-  end
-
   # Mailer
   def send_notification_emails
-    players = Player.find_all_by_surname 'Szlachta' # TODO: change to: Player.all
-    players.each do |player|
-      PlayerMailer.notification_email(player).deliver
+    games_instances = GameInstance.where emails_sent: false
+    games_instances.each do |game_instance|
+      players = Player.find_all_by_surname 'Szlachta' # TODO: change to: Player.all
+      # TODO: background job to send emails
+      players.each do |player|
+        PlayerMailer.notification_email(player, game_instance).deliver
+      end
+      game_instance.update_attribute :emails_sent, true
     end
   end
 end
