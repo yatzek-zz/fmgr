@@ -13,7 +13,7 @@ class PlayerMailer < ActionMailer::Base
   include PlayersHelper
   default from: "noreply@fmgr.heroku.com"
 
-  def notification_email(player)
+  def notification_email(player, game_instance)
     #@player = player
     # TODO: click action
     # TODO: date of game
