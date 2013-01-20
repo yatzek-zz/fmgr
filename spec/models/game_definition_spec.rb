@@ -1,7 +1,7 @@
 require 'spec_helper'
 require "timecop"
 
-describe GameDefinition do
+describe "GameDefinition" do
 
   it "has a valid factory" do
     create(:game_definition).should be_valid
@@ -58,7 +58,6 @@ describe GameDefinition do
       GameInstance.all.size.should == 1
     end
 
-
     it "creates next game instance if within creation period and past week game instance exists" do
       Timecop.freeze TIME_10_01_2013_13_00 # less than 5 days before the game, next game: 15.01.2013 12:00
       first_game_time = @tue_12_00_game.next_game_time
@@ -76,7 +75,6 @@ describe GameDefinition do
       GameInstance.first.time.should == first_game_time
       GameInstance.last.time.should == @tue_12_00_game.next_game_time
     end
-
 
   end
 

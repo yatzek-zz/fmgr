@@ -75,6 +75,11 @@ Spork.each_run do
   # This code will be run each time you run your specs.
   FactoryGirl.reload
 
+  # Hack to ensure models get reloaded by Spork - remove as soon as this is fixed in Spork.
+  # Silence warnings to avoid all the 'warning: already initialized constant' messages that
+  # appear for constants defined in the models.
+  Dir["#{Rails.root}/app/models/**/*.rb"].each {|f| load f}
+
 end
 
 # --- Instructions ---
