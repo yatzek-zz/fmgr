@@ -67,6 +67,9 @@ Spork.prefork do
     #  DatabaseCleaner.clean
     #end
 
+    config.include MailerMacros
+    config.before(:each){reset_email}
+
   end
 
 end

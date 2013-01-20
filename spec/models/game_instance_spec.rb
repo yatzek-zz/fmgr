@@ -22,4 +22,37 @@ describe GameInstance do
     build(:game_instance, game_definition: game_definition, time: time).should_not be_valid
   end
 
+  describe "has periodic job which" do
+
+    it "does not send emails to players if there are no game instances" do
+      GameInstance.send_notification_emails
+      email_deliveries.should be_empty
+    end
+
+    it "does not send emails to players for an old game instance" do
+      game_definition = create(:game_definition)
+      create(:game_instance, game_definition: game_definition,
+                             time: game_definition.next_game_time,
+                             emails_sent: true)
+      create(:szlachta)
+
+      GameInstance.send_notification_emails
+
+      email_deliveries.should be_empty
+    end
+
+    it "sends emails to players for a new game instance" do
+      game_definition = create(:game_definition)
+      game_instance = create(:game_instance, game_definition: game_definition, time: game_definition.next_game_time)
+      szlachta = create(:szlachta)
+
+      GameInstance.send_notification_emails
+
+      last_email.to.should include szlachta.email
+      game_instance.reload
+      game_instance.emails_sent.should be_true
+    end
+
+  end
+
 end

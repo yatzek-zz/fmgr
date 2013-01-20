@@ -8,4 +8,21 @@ class GameInstance < ActiveRecord::Base
 
   has_many :player_game_instances
   has_many :players, :through => :player_game_instances
+
+  # Mailer
+  def self.send_notification_emails
+    games_instances = GameInstance.where emails_sent: false
+    games_instances.each do |game_instance|
+      # TODO: change to: Player.all
+      players = Player.find_all_by_surname 'Szlachta'
+
+      # TODO: background job to send emails
+      players.each do |player|
+        PlayerMailer.notification_email(player, game_instance).deliver
+      end
+
+      game_instance.update_attribute :emails_sent, true
+    end
+  end
+
 end
