@@ -33,13 +33,13 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
 
-  gem 'rb-inotify'
-  #gem 'libnotify' - annoying windows-like notifications
+  # guard + spork
+  gem 'rb-inotify', '~> 0.8.8'
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'rack-livereload'
-  gem 'spork'
   gem 'guard-spork'
+  #gem 'spork-rails'
 
   gem 'capybara'
   gem 'launchy'

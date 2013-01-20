@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe "Player" do
+describe Player do
 
   it "has a valid factory" do
     create(:messi).should be_valid
