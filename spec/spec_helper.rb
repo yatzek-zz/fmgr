@@ -14,7 +14,16 @@ Spork.prefork do
 
   puts "Rails env: #{ENV["RAILS_ENV"]}"
 
+  require 'rails/application'
+  #Spork.trap_method(Rails::Application, :reload_routes!) # Rails 3.0
+  Spork.trap_method(Rails::Application::RoutesReloader, :reload!) # Rails 3.1+
+  # Prevent main application to eager_load in the prefork block (do not load files in autoload_paths)
+  Spork.trap_method(Rails::Application, :eager_load!)
   require File.expand_path("../../config/environment", __FILE__)
+  # Load all railties files
+  Rails.application.railties.all { |r| r.eager_load! }
+
+
   require 'rspec/rails'
   require 'capybara/rspec'
   require 'rspec/autorun'
@@ -81,7 +90,12 @@ Spork.each_run do
   # Hack to ensure models get reloaded by Spork - remove as soon as this is fixed in Spork.
   # Silence warnings to avoid all the 'warning: already initialized constant' messages that
   # appear for constants defined in the models.
+
+  # Reload every run to capture changes
   Dir["#{Rails.root}/app/models/**/*.rb"].each {|f| load f}
+  Dir["#{Rails.root}/app/controllers/**/*.rb"].each {|f| load f}
+  Dir["#{Rails.root}/app/helpers/**/*.rb"].each {|f| load f}
+  Dir["#{Rails.root}/app/mailers/**/*.rb"].each {|f| load f}
 
 end
 
