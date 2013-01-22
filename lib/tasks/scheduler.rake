@@ -15,18 +15,7 @@ task :create_game_instances => :environment do
   GameDefinition.create_game_instances
 end
 
-# TODO: finish this + email with links
-
-desc "send notification emails testing task"
-task :send_notifications => :environment do
-  controller = PlayersController.new
-  controller.send_notification_emails
-end
-
-desc "send notification emails on thursday task"
-task :send_emails_on_thursday => :environment do
-  if Time.now.thursday?
-    controller = PlayersController.new
-    controller.send_notification_emails
-  end
+desc "send notification emails task"
+task :send_notification_emails => :environment do
+  GameInstance.send_notification_emails
 end
