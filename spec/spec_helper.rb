@@ -25,8 +25,9 @@ Spork.prefork do
 
 
   require 'rspec/rails'
-  require 'capybara/rspec'
   require 'rspec/autorun'
+  require 'capybara/rails'
+  require 'capybara/rspec'
 
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
@@ -78,6 +79,13 @@ Spork.prefork do
 
     config.include MailerMacros
     config.before(:each){reset_email}
+
+    # filter fun by :focus tag
+    config.filter_run :focus => true
+    # run all when no test with focus tag are found
+    config.run_all_when_everything_filtered = true
+    # enough to say: :focus rather than: :focus => true
+    config.treat_symbols_as_metadata_keys_with_true_values = true
 
   end
 
