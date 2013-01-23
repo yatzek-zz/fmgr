@@ -3,7 +3,7 @@ require "heroku-api"
 API_KEY = 'ff168fd3606f0727348d73a5a843272c523459aa'
 APP_NAME = 'fmgr'
 
-# to test run: heroku run rake scale[0]
+# to run: heroku run rake scale[0]
 desc "Scale dynos"
 task :scale, :instances do |t, args|
   heroku = Heroku::API.new api_key: API_KEY
