@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: game_definitions
+#
+#  id         :integer          not null, primary key
+#  day        :string(255)
+#  time       :string(255)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 require "chronic"
 
 class GameDefinition < ActiveRecord::Base

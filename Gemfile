@@ -32,6 +32,7 @@ gem 'encryptor'
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'annotate'
 
   # guard + spork
   gem 'rb-inotify', '~> 0.8.8'
