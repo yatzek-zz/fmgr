@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe PlayerGameInstance do
+describe 'PlayerGame' do
   pending "add some examples to (or delete) #{__FILE__}"
 end

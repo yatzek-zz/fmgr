@@ -32,48 +32,48 @@ describe "GameDefinition" do
 
     it "does not create next game instance if not withing creation period" do
       Timecop.freeze TIME_10_01_2013_11_00 # more than 5 days before the game, next game: 15.01.2013 12:00
-      GameDefinition.create_game_instances
+      GameDefinition.create_games
 
-      GameInstance.all.should be_empty
+      Game.all.should be_empty
     end
 
     it "creates next game instance if within creation period and none exists" do
       Timecop.freeze TIME_10_01_2013_13_00 # less than 5 days before the game, next game: 15.01.2013 12:00
-      GameDefinition.create_game_instances
+      GameDefinition.create_games
 
-      GameInstance.all.size.should == 1
-      game_instance = GameInstance.first
-      game_instance.game_definition.should == @tue_12_00_game
-      game_instance.time.should == @tue_12_00_game.next_game_time
+      Game.all.size.should == 1
+      game = Game.first
+      game.game_definition.should == @tue_12_00_game
+      game.time.should == @tue_12_00_game.next_game_time
     end
 
     it "does not create next game instance if within creation period and game instance exists" do
       Timecop.freeze TIME_10_01_2013_13_00 # less than 5 days before the game, next game: 15.01.2013 12:00
-      create(:game_instance, game_definition: @tue_12_00_game, time: @tue_12_00_game.next_game_time)
+      create(:game, game_definition: @tue_12_00_game, time: @tue_12_00_game.next_game_time)
 
-      GameInstance.all.size.should == 1
+      Game.all.size.should == 1
 
-      GameDefinition.create_game_instances
+      GameDefinition.create_games
 
-      GameInstance.all.size.should == 1
+      Game.all.size.should == 1
     end
 
     it "creates next game instance if within creation period and past week game instance exists" do
       Timecop.freeze TIME_10_01_2013_13_00 # less than 5 days before the game, next game: 15.01.2013 12:00
       first_game_time = @tue_12_00_game.next_game_time
-      create(:game_instance, game_definition: @tue_12_00_game, time: first_game_time)
+      create(:game, game_definition: @tue_12_00_game, time: first_game_time)
 
-      GameInstance.all.size.should == 1
+      Game.all.size.should == 1
       Timecop.freeze TIME_17_01_2013_13_00 # move one week forward
 
-      GameDefinition.create_game_instances
+      GameDefinition.create_games
 
-      game_instances = GameInstance.all
-      game_instances.size.should == 2
-      game_instances.each { |g_i| g_i.game_definition.should == @tue_12_00_game }
+      games = Game.all
+      games.size.should == 2
+      games.each { |g_i| g_i.game_definition.should == @tue_12_00_game }
 
-      GameInstance.first.time.should == first_game_time
-      GameInstance.last.time.should == @tue_12_00_game.next_game_time
+      Game.first.time.should == first_game_time
+      Game.last.time.should == @tue_12_00_game.next_game_time
     end
 
   end

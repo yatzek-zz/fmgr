@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-feature "PlayerGameInstances" do
+feature "PlayerGame" do
 
     scenario "visit root url" do
       visit root_url

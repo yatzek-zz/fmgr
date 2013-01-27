@@ -14,7 +14,7 @@ class GameDefinition < ActiveRecord::Base
 
   # game instance creation
   # run daily
-  def self.create_game_instances
+  def self.create_games
     game_definitions = GameDefinition.all
     game_definitions.each do |game_definition|
 
@@ -24,10 +24,10 @@ class GameDefinition < ActiveRecord::Base
       # if less than 5 days to the next game
       if now + CREATE_GAME_BEFORE_DAYS > next_game_time
 
-        game_instance = GameInstance.last(conditions: "game_definition_id = #{game_definition.id}")
+        game = Game.last(conditions: "game_definition_id = #{game_definition.id}")
         # if next game instance does not exist yet
-        unless game_instance && game_instance.time == next_game_time
-          GameInstance.create(game_definition: game_definition, time: game_definition.next_game_time)
+        unless game && game.time == next_game_time
+          Game.create(game_definition: game_definition, time: game_definition.next_game_time)
         end
 
       end
