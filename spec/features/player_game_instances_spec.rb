@@ -16,6 +16,7 @@ feature "PlayerGameInstances" do
       scenario "game instance cannot be found"
       scenario "player cannot be found"
     end
+
     # spec/features/widget_management_spec.rb
     #feature "widget management" do
     #  scenario "creating a new widget" do
