@@ -9,6 +9,11 @@ class GameInstance < ActiveRecord::Base
   has_many :player_game_instances
   has_many :players, :through => :player_game_instances
 
+  #Thursday 10-Jan-2013 08:00
+  def time_formatted
+    time.strftime("%A %d-%b-%Y %H:%M")
+  end
+
   # Mailer
   def self.send_notification_emails
     games_instances = GameInstance.where emails_sent: false

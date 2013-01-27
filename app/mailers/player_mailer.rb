@@ -5,11 +5,10 @@ class PlayerMailer < ActionMailer::Base
   default from: "noreply@fmgr.heroku.com"
 
   def notification_email(player, game_instance)
-    #@player = player
-    # TODO: click action
-    # TODO: date of game
-    @url  = "http://fmgr.herokuapp.com/play/#{url_safe_encode(player.id.to_s)}"
-    mail(:to => player.email, :subject => "Want to play 5-a-side?")
+    @url  = subscribe_link player.id, game_instance.id
+    @cancel_url = unsubscribe_link player.id, game_instance.id
+    mail(:to => player.email,
+         :subject => "Want to play 5-a-side on #{game_instance.time_formatted} at the Goals?")
   end
 
 end
