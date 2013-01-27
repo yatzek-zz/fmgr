@@ -10,7 +10,7 @@ task :scale, :instances do |t, args|
   heroku.post_ps_scale(APP_NAME, 'web', args[:instances])
 end
 
-desc "game instances periodic task"
+desc "create games periodic task"
 task :create_games => :environment do
   GameDefinition.create_games
 end

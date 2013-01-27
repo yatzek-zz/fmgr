@@ -2,7 +2,7 @@
 
 FactoryGirl.define do
   factory :player_game do
-    player association(:player)
-    game association(:game)
+    association(:player)
+    association(:game)
   end
 end
