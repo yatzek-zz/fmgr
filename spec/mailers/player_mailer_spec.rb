@@ -10,8 +10,8 @@ describe 'PlayerMailer' do
     before(:each) do
       Timecop.freeze TIME_29_01_2013_12_00
       @szlachta = create(:szlachta)
-      @game_instance = create(:game_instance, time: Time.now)
-      @mail = PlayerMailer.notification_email @szlachta, @game_instance
+      @game = create(:game, time: Time.now)
+      @mail = PlayerMailer.notification_email @szlachta, @game
     end
 
     it "renders the headers" do

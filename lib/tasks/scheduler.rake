@@ -11,11 +11,11 @@ task :scale, :instances do |t, args|
 end
 
 desc "game instances periodic task"
-task :create_game_instances => :environment do
-  GameDefinition.create_game_instances
+task :create_games => :environment do
+  GameDefinition.create_games
 end
 
 desc "send notification emails task"
 task :send_notification_emails => :environment do
-  GameInstance.send_notification_emails
+  Game.send_notification_emails
 end

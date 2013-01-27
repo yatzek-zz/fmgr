@@ -4,11 +4,11 @@ class PlayerMailer < ActionMailer::Base
   include PlayersHelper
   default from: "noreply@fmgr.heroku.com"
 
-  def notification_email(player, game_instance)
-    @url  = subscribe_link player.id, game_instance.id
-    @cancel_url = unsubscribe_link player.id, game_instance.id
+  def notification_email(player, game)
+    @url  = subscribe_link player.id, game.id
+    @cancel_url = unsubscribe_link player.id, game.id
     mail(:to => player.email,
-         :subject => "Want to play 5-a-side on #{game_instance.time_formatted} at the Goals?")
+         :subject => "Want to play 5-a-side on #{game.time_formatted} at the Goals?")
   end
 
 end

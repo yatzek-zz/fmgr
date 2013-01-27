@@ -1,4 +1,4 @@
-class GameInstance < ActiveRecord::Base
+class Game < ActiveRecord::Base
   attr_accessible :time, :game_definition, :emails_sent
   validates :time, :game_definition, :presence => true
 
@@ -6,8 +6,8 @@ class GameInstance < ActiveRecord::Base
 
   belongs_to :game_definition
 
-  has_many :player_game_instances
-  has_many :players, :through => :player_game_instances
+  has_many :player_games
+  has_many :players, :through => :player_games
 
   #Thursday 10-Jan-2013 08:00
   def time_formatted
@@ -16,17 +16,17 @@ class GameInstance < ActiveRecord::Base
 
   # Mailer
   def self.send_notification_emails
-    games_instances = GameInstance.where emails_sent: false
-    games_instances.each do |game_instance|
+    games = Game.where emails_sent: false
+    games.each do |game|
       # TODO: change to: Player.all
       players = Player.find_all_by_surname 'Szlachta'
 
       # TODO: background job to send emails
       players.each do |player|
-        PlayerMailer.notification_email(player, game_instance).deliver
+        PlayerMailer.notification_email(player, game).deliver
       end
 
-      game_instance.update_attribute :emails_sent, true
+      game.update_attribute :emails_sent, true
     end
   end
 

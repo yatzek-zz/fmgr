@@ -1,8 +1,8 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :player_game_instance do
+  factory :player_game do
     player association(:player)
-    game_instance association(:game_instance)
+    game association(:game)
   end
 end

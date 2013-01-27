@@ -9,8 +9,8 @@ class Player < ActiveRecord::Base
   attr_accessible :name, :surname, :email
 
 
-  has_many :player_game_instances
-  has_many :game_instances, :through => :player_game_instances
+  has_many :player_games
+  has_many :games, :through => :player_games
 
   # scopes and finders?
   # test them
