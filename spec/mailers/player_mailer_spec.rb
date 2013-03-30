@@ -22,8 +22,9 @@ describe 'PlayerMailer' do
 
     # may fail when ids change - if you use db cleaner gem?
     it "renders the body" do
-      @mail.body.encoded.should include "To play click this link: http://fmgr.herokuapp.com/play/subscribe/VPkLfUJeuwr_XC0-JVyssA=="
-      @mail.body.encoded.should include "To unclick the click above use this link: http://fmgr.herokuapp.com/play/unsubscribe/VPkLfUJeuwr_XC0-JVyssA=="
+
+      @mail.body.encoded.should include "To play click this link: http://fmgr.herokuapp.com/playergame/subscribe/VPkLfUJeuwr_XC0-JVyssA=="
+      @mail.body.encoded.should include "To unclick the click above use this link: http://fmgr.herokuapp.com/playergame/unsubscribe/VPkLfUJeuwr_XC0-JVyssA=="
     end
 
   end

@@ -1,6 +1,6 @@
-source :rubygems
+source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby "2.0.0"
 gem 'rails', '3.2.11'
 gem 'haml'
 
@@ -33,9 +33,10 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'annotate'
+  gem 'rails_best_practices'
 
   # guard + spork
-  gem 'rb-inotify', '~> 0.8.8'
+  gem 'rb-inotify'
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'rack-livereload'
@@ -43,6 +44,7 @@ group :development, :test do
   #gem 'spork-rails'
 
   gem 'capybara'
+  gem 'poltergeist'
   gem 'launchy'
 end
 
