@@ -25,5 +25,6 @@ class Player < ActiveRecord::Base
   has_many :games, :through => :player_games, :uniq => true
 
   # scopes and finders?
+  scope :sorted, :order => "name, surname ASC"
   # test them
 end

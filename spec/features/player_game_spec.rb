@@ -2,13 +2,17 @@ require 'spec_helper'
 
 feature "PlayerGame" do
 
-    scenario "visit root url" do
-      visit root_url
-      #save_and_open_page
-      page.should have_content "Tuesday Football"
+    let(:helper){Object.new.extend PlayersHelper}
+
+    scenario "adds player game instance when user clicks the add link in the email" do
+
+      # /playergame/subscribe/VPkLfUJeuwr_XC0-JVyssA==
+      messi = create :messi
+      game = create :game
+      link_hash = helper.url_safe_encode(helper.create_link_hash(messi.id, game.id))
+      visit "/playergame/subscribe/#{link_hash}"
     end
 
-    scenario "adds player game instance when user clicks the add link in the email"
     scenario "removes player game instance when user clicks the remove link in the email"
 
     context "shows error message when link is invalid" do

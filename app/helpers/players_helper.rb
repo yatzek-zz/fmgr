@@ -7,12 +7,12 @@ module PlayersHelper
 
   def subscribe_link player_id, game_id
     code = url_safe_encode(create_link_hash(player_id, game_id))
-    "http://fmgr.herokuapp.com/play/subscribe/#{code}"
+    "http://fmgr.herokuapp.com/playergame/subscribe/#{code}"
   end
 
   def unsubscribe_link player_id, game_id
     code = url_safe_encode(create_link_hash(player_id, game_id))
-    "http://fmgr.herokuapp.com/play/unsubscribe/#{code}"
+    "http://fmgr.herokuapp.com/playergame/unsubscribe/#{code}"
   end
 
   def url_safe_encode str_value

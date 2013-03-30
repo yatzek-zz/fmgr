@@ -38,7 +38,7 @@ class GameDefinition < ActiveRecord::Base
         game = Game.last(conditions: "game_definition_id = #{game_definition.id}")
         # if next game instance does not exist yet
         unless game && game.time == next_game_time
-          Game.create(game_definition: game_definition, time: game_definition.next_game_time)
+          Game.create!(game_definition: game_definition, time: game_definition.next_game_time)
         end
 
       end
