@@ -15,7 +15,7 @@ class GameDefinition < ActiveRecord::Base
 
   attr_accessible :day, :time
   validates :day, :time, :presence => true
-  validates :time, :uniqueness => {:scope => :day }
+  validates :time, :uniqueness => {:scope => :day}
 
   def next_game_time
     Chronic.parse "next #{day} #{time}"
