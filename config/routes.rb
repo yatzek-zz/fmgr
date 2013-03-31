@@ -8,6 +8,9 @@ Fmgr::Application.routes.draw do
   get 'playergame/subscribe/:code' => 'PlayerGame#subscribe'
   get 'playergame/unsubscribe/:code' => 'PlayerGame#unsubscribe'
 
+  get 'contact_us' => 'ContactUs#new'
+  post 'send_mail' => 'ContactUs#send_mail'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
