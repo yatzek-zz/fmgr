@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 ruby "2.0.0"
 gem 'rails', '3.2.11'
-gem 'haml'
+#gem 'haml'
+gem "slim-rails"
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,9 +34,14 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'annotate'
+
+  # cool stuff
   gem 'rails_best_practices'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bullet'            # finds n+1 querries
+  #
+
 
   # guard + spork
   gem 'rb-inotify'

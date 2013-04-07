@@ -1,3 +1,5 @@
+require_relative "application_controller"
+
 class PlayerGameController < ApplicationController
 
   def subscribe
