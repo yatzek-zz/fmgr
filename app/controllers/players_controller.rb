@@ -1,3 +1,5 @@
+require_relative "application_controller"
+
 class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
