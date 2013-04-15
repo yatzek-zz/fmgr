@@ -7,7 +7,7 @@ class PlayersController < ApplicationController
     @players = Player.sorted
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html # index.html.slim
       format.json { render json: @players }
     end
   end
@@ -18,7 +18,7 @@ class PlayersController < ApplicationController
     @player = Player.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # show.html.slim
       format.json { render json: @player }
     end
   end
@@ -29,7 +29,7 @@ class PlayersController < ApplicationController
     @player = Player.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html # new.html.slim
       format.json { render json: @player }
     end
   end
