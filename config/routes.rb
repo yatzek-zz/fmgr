@@ -5,11 +5,11 @@ Fmgr::Application.routes.draw do
   #get "home/index"
 
   #match 'photos/:id' => 'photos#show'
-  get 'playergame/subscribe/:code' => 'PlayerGame#subscribe'
-  get 'playergame/unsubscribe/:code' => 'PlayerGame#unsubscribe'
+  get '/playergame/subscribe/:code' => 'PlayerGame#subscribe'
+  get '/playergame/unsubscribe/:code' => 'PlayerGame#unsubscribe'
 
-  get 'contact_us' => 'ContactUs#new'
-  post 'send_mail' => 'ContactUs#send_mail'
+  get '/contact_us' => 'contact_us#new'
+  post '/send_mail' => 'contact_us#send_mail'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
