@@ -10,11 +10,14 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
 
+  gem 'jquery-rails'
+  gem 'bootstrap-sass'
+  gem 'jquery-datatables-rails'
+
   gem 'therubyracer'
   gem 'uglifier'
 end
 
-gem 'jquery-rails'
 gem 'heroku-api'
 gem 'encryptor'
 
@@ -26,6 +29,10 @@ gem 'pg'
 
 gem 'chronic'
 gem 'encryptor'
+
+gem 'data_table'
+gem 'will_paginate'
+
 
 group :development, :test do
   gem 'rspec-rails'
