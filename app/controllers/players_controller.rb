@@ -4,11 +4,19 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @players = Player.sorted
+    #@players = Player.sorted
 
     respond_to do |format|
       format.html # index.html.slim
-      format.json { render json: @players }
+      format.json do
+
+        json = Player.for_data_table(self, %w(name surname email), %w(name surname email)) do |player|
+          [player.name, player.surname, player.email,
+           "<%= link_to('Show', player) %>", "<%= link_to('Edit', edit_player_path(player)) %>"]
+        end
+
+        render json: json
+      end
     end
   end
 
