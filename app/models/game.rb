@@ -22,8 +22,10 @@ class Game < ActiveRecord::Base
   has_many :players, :through => :player_games, :uniq => true
 
   #Thursday 10-Jan-2013 08:00
+  TIME_FORMAT = '%A %d-%b-%Y %H:%M'
+
   def time_formatted
-    time.strftime("%A %d-%b-%Y %H:%M")
+    time.strftime(TIME_FORMAT)
   end
 
   # Mailer
