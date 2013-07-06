@@ -9,7 +9,7 @@
 #  updated_at :datetime         not null
 #
 
-require "chronic"
+require 'chronic'
 
 class GameDefinition < ActiveRecord::Base
 
@@ -17,11 +17,11 @@ class GameDefinition < ActiveRecord::Base
   validates :day, :time, :presence => true
   validates :time, :uniqueness => {:scope => :day}
 
+  CREATE_GAME_BEFORE_DAYS = 5 * 24 * 60 * 60
+
   def next_game_time
     Chronic.parse "next #{day} #{time}"
   end
-
-  CREATE_GAME_BEFORE_DAYS = 5 * 24 * 60 * 60
 
   # game instance creation
   # run daily
