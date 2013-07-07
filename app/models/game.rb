@@ -19,7 +19,7 @@ class Game < ActiveRecord::Base
   belongs_to :game_definition
 
   has_many :player_games
-  has_many :players, :through => :player_games, :uniq => true
+  has_many :players, :through => :player_games, :uniq => true #, :order => 'player_games.created_at DESC'
 
   #Thursday 10-Jan-2013 08:00
   TIME_FORMAT = '%A %d-%b-%Y %H:%M'
