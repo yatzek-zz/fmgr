@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="1988667473">
+  <component name="DataSourceManagerImpl" format="xml" hash="604355309">
     <data-source source="LOCAL" name="Rails tfmgr: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="76041ff6-18c7-4521-ac9d-16ba0bf80a26">
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:tfmgr</jdbc-url>
@@ -60,6 +60,18 @@
         </library>
         <library>
           <url>jar://$USER_HOME$/.RubyMine50/config/jdbc-drivers/postgresql-9.1-901.jdbc3.jar!/</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails fmgr: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="df0b6953-f11f-4a00-ae93-e0f38a1b7ce9">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>jar://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar!/</url>
         </library>
       </libraries>
     </data-source>

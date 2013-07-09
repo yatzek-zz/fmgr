@@ -29,6 +29,7 @@
     <orderEntry type="library" scope="PROVIDED" name="activeresource (v3.2.13, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v3.2.13, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.3.4, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="andand (v1.3.3, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="annotate (v2.5.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v3.0.2, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="awesome_print (v1.1.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />

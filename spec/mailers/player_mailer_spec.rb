@@ -8,9 +8,8 @@ describe 'PlayerMailer' do
     TIME_29_01_2013_12_00 = Time.local(2013, 1, 29, 12, 0, 0)
 
     before(:each) do
-      Timecop.freeze TIME_29_01_2013_12_00
       @szlachta = create(:szlachta)
-      @game = create(:game, time: Time.now)
+      @game = create(:game, time: TIME_29_01_2013_12_00)
       @mail = PlayerMailer.notification_email @szlachta, @game
     end
 
@@ -32,5 +31,3 @@ describe 'PlayerMailer' do
   end
 
 end
-
-
