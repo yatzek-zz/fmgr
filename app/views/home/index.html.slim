@@ -1,2 +1,11 @@
-h1 Next game
+- if @game
 
+  h1 Next game on #{@game.time_formatted}
+  p Players
+  ol
+    - @game.players.andand.each do |player|
+      li #{player.email}
+
+- else
+
+  h1 No game yet

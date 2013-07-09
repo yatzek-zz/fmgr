@@ -32,6 +32,7 @@ gem 'encryptor'
 
 gem 'data_table'
 gem 'will_paginate'
+gem 'andand'
 
 
 group :development, :test do

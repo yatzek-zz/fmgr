@@ -14,12 +14,14 @@ class Game < ActiveRecord::Base
   attr_accessible :time, :game_definition, :emails_sent
   validates :time, :game_definition, :presence => true
 
-  validates :time, :uniqueness => {:scope => :game_definition_id }
+  validates :time, :uniqueness => {:scope => :game_definition_id}
 
   belongs_to :game_definition
 
   has_many :player_games
   has_many :players, :through => :player_games, :uniq => true #, :order => 'player_games.created_at DESC'
+
+  scope :next, -> { where('time > ? ', Time.now).order('time desc').limit(1) }
 
   #Thursday 10-Jan-2013 08:00
   TIME_FORMAT = '%A %d-%b-%Y %H:%M'
@@ -30,7 +32,7 @@ class Game < ActiveRecord::Base
 
   # Mailer
   def self.send_notification_emails
-    games = Game.where emails_sent: false
+    games = Game.where(emails_sent: false)
     games.each do |game|
       # TODO: change to: Player.all
       players = Player.find_all_by_surname 'Szlachta'
@@ -40,7 +42,7 @@ class Game < ActiveRecord::Base
         PlayerMailer.notification_email(player, game).deliver
       end
 
-      game.update_attribute :emails_sent, true
+      game.update_attribute(:emails_sent, true)
     end
   end
 
