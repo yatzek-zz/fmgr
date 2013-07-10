@@ -16,10 +16,6 @@ class PlayerGameController < ApplicationController
     player_game_details(game_id, player_id)
   end
 
-  def earliest
-
-  end
-
   :private
 
   def decode_ids(params)

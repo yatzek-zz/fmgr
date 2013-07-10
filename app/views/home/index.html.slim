@@ -1,6 +1,6 @@
 - if @game
 
-  h1 Next game on #{@game.time_formatted}
+  h1 Game on #{@game.time_formatted}
   p Players
   ol
     - @game.players.andand.each do |player|
@@ -8,4 +8,4 @@
 
 - else
 
-  h1 No game yet
+  h1 No games yet
