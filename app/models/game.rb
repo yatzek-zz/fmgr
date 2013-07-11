@@ -35,7 +35,8 @@ class Game < ActiveRecord::Base
     games = Game.where(emails_sent: false)
     games.each do |game|
       # TODO: change to: Player.all
-      players = Player.find_all_by_surname 'Szlachta'
+      #players = Player.find_all_by_surname 'Szlachta'
+      players = Player.all
 
       # TODO: background job to send emails
       players.each do |player|
