@@ -8,8 +8,8 @@
 
 
 # Players
-require "player"
-require "game_definition"
+require 'player'
+require 'game_definition'
 
 GameDefinition.delete_all
 
@@ -17,31 +17,34 @@ GameDefinition.create!(day: 'tue', time: '12:00')
 
 Player.delete_all
 
-Player.create!(name: 'Jakub', surname: 'Witkiewicz', email: 'Jakub.Witkiewicz@gbskyb.com')
-Player.create!(name: 'Maria', surname: 'Shodunke', email: 'Maria.Shodunke@bskyb.com')
-Player.create!(name: 'Gareth', surname: 'Porter', email: 'Gareth.Porter@bskyb.com')
-Player.create!(name: 'Krishan', surname: 'Lakha', email: 'Krishan.Lakha@bskyb.com')
-Player.create!(name: 'John', surname: 'Boyes', email: 'John.Boyes@bskyb.com')
-Player.create!(name: 'Nauman', surname: 'Khan', email: 'Nauman.Khan@bskyb.com')
-Player.create!(name: 'Seb', surname: 'Briggs', email: 'Seb.Briggs@bskyb.com')
-Player.create!(name: 'Paul', surname: 'Murphy', email: 'Paul.Murphy2@bskyb.com')
-Player.create!(name: 'Himanshu', surname: 'Kohli', email: 'Himanshu.Kohli@bskyb.com')
-Player.create!(name: 'Nigel', surname: 'Pepper', email: 'Nigel.Pepper@bskyb.com')
-Player.create!(name: 'Jacob', surname: 'Farrugia', email: 'Jacob.Farrugia@bskyb.com')
-Player.create!(name: 'Lawrence', surname: 'Wyatt', email: 'Lawrence.Wyatt@bskyb.com')
-Player.create!(name: 'Shenal', surname: 'Devani', email: 'Shenal.Devani@bskyb.com')
-Player.create!(name: 'Anikh', surname: 'Subhan', email: 'Anikh.Subhan@bskyb.com')
-Player.create!(name: 'Dan', surname: 'Knight', email: 'Dan.Knight@bskyb.com')
-Player.create!(name: 'Jacek', surname: 'Szlachta', email: 'Jacek.Szlachta@bskyb.com')
-Player.create!(name: 'Massimo', surname: 'Battestini', email: 'Massimo.Battestini@bskyb.com')
-Player.create!(name: 'Mansoor', surname: 'Fazil', email: 'Mansoor.Fazil@bskyb.com')
-Player.create!(name: 'Jamie', surname: 'English', email: 'Jamie.English@bskyb.com')
-Player.create!(name: 'Sarndeep', surname: 'Nijjar', email: 'Sarndeep.Nijjar@bskyb.com')
-Player.create!(name: 'Christopher', surname: 'Temple', email: 'Christopher.Temple@bskyb.com')
-Player.create!(name: 'Kunal', surname: 'Behl', email: 'Kunal.Behl@bskyb.com')
-Player.create!(name: 'Imran', surname: 'Hussain', email: 'Imran.Hussain@bskyb.com')
-Player.create!(name: 'Robert', surname: 'Howe', email: 'Robert.Howe@bskyb.com')
-Player.create!(name: 'Andrew', surname: 'Akien', email: 'Andrew.Akien@bskyb.com')
-Player.create!(name: 'Paul', surname: 'Makkar', email: 'Paul.Makkar@bskyb.com')
-Player.create!(name: 'Gregory', surname: 'Kuzdenyi', email: 'Gregory.Kuzdenyi@bskyb.com')
-Player.create!(name: 'Dogan', surname: 'Narinc', email: 'Dogan.Narinc@bskyb.com')
+Player.create!(email: 'Jakub.Witkiewicz@gbskyb.com')
+Player.create!(email: 'Seb.Briggs@bskyb.com')
+Player.create!(email: 'Paul.Murphy2@bskyb.com')
+Player.create!(email: 'Lawrence.Wyatt@bskyb.com')
+Player.create!(email: 'Anikh.Subhan@bskyb.com')
+Player.create!(email: 'Jacek.Szlachta@bskyb.com')
+Player.create!(email: 'Christopher.Temple@bskyb.com')
+Player.create!(email: 'Imran.Hussain@bskyb.com')
+Player.create!(email: 'Andrew.Akien@bskyb.com')
+Player.create!(email: 'Satya.Peddireddy@bskyb.com')
+Player.create!(email: 'David.Rooks@bskyb.com')
+Player.create!(email: 'Prakash.Kudrekar@bskyb.com')
+Player.create!(email: 'David.Pacheco@bskyb.com')
+Player.create!(email: 'Kiran.Amin@bskyb.com')
+Player.create!(email: 'Federico.Roman@bskyb.com')
+Player.create!(email: 'John.Petrie@bskyb.com')
+Player.create!(email: 'Sukhdev.Bansal@bskyb.com')
+Player.create!(email: 'Sukhdeep.Heer@bskyb.com')
+Player.create!(email: 'Nahiem.Ayub@bskyb.com')
+Player.create!(email: 'Dogan.Narinc2@bskyb.com')
+Player.create!(email: 'Will.Walker@bskyb.com')
+Player.create!(email: 'Christopher.Kitley@bskyb.com')
+Player.create!(email: 'Dominic.Bloch@bskyb.com')
+Player.create!(email: 'Sam.Holt@bskyb.com')
+Player.create!(email: 'Stuart.Bye@bskyb.com')
+Player.create!(email: 'Charlie.Wagner@bskyb.com')
+Player.create!(email: 'Richard.Guest@bskyb.com')
+Player.create!(email: 'Rafael.Priego@bskyb.com')
+Player.create!(email: 'Bogdan.Amihaesie@bskyb.com')
+Player.create!(email: 'Laith.Nurie@bskyb.com')
+Player.create!(email: 'Andrew.Craig2@bskyb.com')
