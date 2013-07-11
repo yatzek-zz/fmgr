@@ -3,3 +3,5 @@ p #{@player.email} has been removed!
 ol
   - @players.each do |player|
     li =player.email
+
+= link_to('Home', root_path)
