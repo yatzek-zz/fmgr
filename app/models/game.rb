@@ -19,7 +19,7 @@ class Game < ActiveRecord::Base
   belongs_to :game_definition
 
   has_many :player_games
-  has_many :players, :through => :player_games, :uniq => true #, :order => 'player_games.created_at DESC'
+  has_many :players, :through => :player_games, :order => 'player_games.created_at'
 
   #scope :next, -> { where('time > ? ', Time.now).order('time desc').limit(1) }
 
