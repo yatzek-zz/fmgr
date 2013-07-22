@@ -15,11 +15,9 @@ class Player < ActiveRecord::Base
   #validates :name, :surname, :presence => false,   :length => {:minimum => 2}
   validates :email, :uniqueness => true, :length => {:minimum => 4}
 
-  attr_accessible :name, :surname, :email
-
   has_many :player_games
-  has_many :games, :through => :player_games, :uniq => true
+  has_many :games, :through => :player_games
 
-  scope :sorted, :order => 'name, surname ASC'
+  scope :sorted, -> { order('name, surname ASC') }
 
 end

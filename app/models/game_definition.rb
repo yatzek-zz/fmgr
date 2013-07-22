@@ -13,7 +13,6 @@ require 'chronic'
 
 class GameDefinition < ActiveRecord::Base
 
-  attr_accessible :day, :time
   validates :day, :time, :presence => true
   validates :time, :uniqueness => {:scope => :day}
 
@@ -35,7 +34,7 @@ class GameDefinition < ActiveRecord::Base
       # if less than 5 days to the next game
       if now + CREATE_GAME_BEFORE_DAYS > next_game_time
 
-        game = Game.last(conditions: "game_definition_id = #{game_definition.id}")
+        game = Game.where(game_definition_id: game_definition.id).last
         # if next game instance does not exist yet
         unless game && game.time == next_game_time
           Game.create!(game_definition: game_definition, time: next_game_time)

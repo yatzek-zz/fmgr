@@ -11,8 +11,6 @@
 
 class PlayerGame < ActiveRecord::Base
 
-  attr_accessible :player_id, :game_id
-
   belongs_to :player
   belongs_to :game
 

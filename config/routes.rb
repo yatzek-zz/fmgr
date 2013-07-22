@@ -5,8 +5,8 @@ Fmgr::Application.routes.draw do
   #get "home/index"
 
   #match 'photos/:id' => 'photos#show'
-  get '/playergame/subscribe/:code' => 'PlayerGame#subscribe'
-  get '/playergame/unsubscribe/:code' => 'PlayerGame#unsubscribe'
+  get '/playergame/subscribe/:code' => 'player_game#subscribe'
+  get '/playergame/unsubscribe/:code' => 'player_game#unsubscribe'
 
   get '/contact_us' => 'contact_us#new'
   post '/send_mail' => 'contact_us#send_mail'
