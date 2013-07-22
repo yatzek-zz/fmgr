@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/yatzek/data_table.git
+  revision: a2a761995f416fed7c27e4ad35be31aaae04d5c5
+  specs:
+    data_table (0.4.6)
+      rails (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -261,6 +268,7 @@ DEPENDENCIES
   capybara
   chronic
   coffee-rails
+  data_table!
   database_cleaner
   encryptor
   factory_girl_rails

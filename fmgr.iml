@@ -106,6 +106,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ref (v1.0.5, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="require_all (v1.2.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec (v2.14.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v2.14.4, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.14.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.14.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.14.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />

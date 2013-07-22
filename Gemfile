@@ -31,7 +31,7 @@ gem 'chronic'
 gem 'encryptor'
 
 # TODO: fix this - commented out during upgrade to rails 4
-#gem 'data_table'
+gem 'data_table', github: 'yatzek/data_table'
 gem 'will_paginate'
 gem 'andand'
 
