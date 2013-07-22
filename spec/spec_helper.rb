@@ -21,7 +21,9 @@ Spork.prefork do
   Spork.trap_method(Rails::Application, :eager_load!)
   require File.expand_path("../../config/environment", __FILE__)
   # Load all railties files
-  Rails.application.railties.all { |r| r.eager_load! }
+
+  # TODO: fix this - commented out during migration to rails 4
+  #Rails.application.railties.all { |r| r.eager_load! }
 
 
   require 'rspec/rails'

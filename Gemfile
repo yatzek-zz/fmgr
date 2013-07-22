@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 ruby '2.0.0'
-gem 'rails'         #, '3.2.11'
+gem 'rails'         , '4.0.0'
 gem 'slim-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
+#group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
 
@@ -16,7 +16,7 @@ group :assets do
 
   gem 'therubyracer'
   gem 'uglifier'
-end
+#end
 
 gem 'heroku-api'
 gem 'encryptor'
@@ -30,7 +30,8 @@ gem 'pg'
 gem 'chronic'
 gem 'encryptor'
 
-gem 'data_table'
+# TODO: fix this - commented out during upgrade to rails 4
+#gem 'data_table'
 gem 'will_paginate'
 gem 'andand'
 
@@ -70,6 +71,7 @@ group :test do
   gem 'timecop'
 end
 
+gem 'rails_12factor', group: :production
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

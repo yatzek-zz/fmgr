@@ -22,11 +22,4 @@ feature 'PlayerGame' do
       expect(page).to have_content(/leo\.messi\d@example\.com has been removed!/)
     end
 
-    # what for???
-    #context 'shows error message when link is invalid' do
-    #  scenario 'link is corrupted and cannot be decrypted'
-    #  scenario 'game instance cannot be found'
-    #  scenario 'player cannot be found'
-    #end
-
 end
