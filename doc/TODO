@@ -1,0 +1,20 @@
+
+Features:
+
+two categories of users
+    regular players get emails earlier
+    normal players receive emails later
+
+give reason when un-subscribing
+
+mass communication/announcements
+    ability to send emails to all players for a given game
+
+suspend receiving email
+
+
+
+Technical tasks:
+
+    indexes
+    foreign keys
