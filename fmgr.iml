@@ -87,7 +87,7 @@
     <orderEntry type="library" scope="PROVIDED" name="minitest (v4.7.5, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.7, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="pg (v0.15.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pg (v0.16.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="poltergeist (v1.3.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.12.2, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
@@ -125,7 +125,7 @@
     <orderEntry type="library" scope="PROVIDED" name="therubyracer (v0.11.4, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thin (v1.5.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.18.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.1.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.1.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v1.4.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timecop (v0.6.2.2, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="treetop (v1.4.14, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />

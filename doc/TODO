@@ -13,8 +13,9 @@ mass communication/announcements
 suspend receiving email
 
 
-
 Technical tasks:
 
+    spork or rerun - something to run test on change		
     indexes
     foreign keys
+    continuous delivery - free ruby CI
