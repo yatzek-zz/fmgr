@@ -4,7 +4,7 @@ describe MailgunController do
 
   describe "GET 'failed_hook'" do
     it 'returns http success' do
-      post 'failed_hook'
+      get 'failed_hook'
       response.should be_success
     end
   end

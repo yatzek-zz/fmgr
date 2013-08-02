@@ -11,7 +11,7 @@ Fmgr::Application.routes.draw do
   get '/contact_us' => 'contact_us#new'
   post '/send_mail' => 'contact_us#send_mail'
 
-  post '/mailgun/failed' => 'mailgun#failed_hook'
+  get '/mailgun/failed' => 'mailgun#failed_hook'
   #post '/mailgun/delivered' => ''
 
   # The priority is based upon order of creation:
