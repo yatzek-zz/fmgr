@@ -28,5 +28,10 @@ Fmgr::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
+  # source maps for sass
+  #config.sass.debug_info = true
+  #config.sass.sourcemap = true
+  #config.sass.line_comments = false # source maps don't get output if this is true
+
   config.eager_load = false
 end
