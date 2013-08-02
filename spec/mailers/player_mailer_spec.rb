@@ -10,7 +10,7 @@ describe 'PlayerMailer' do
     before(:each) do
       @szlachta = create(:szlachta)
       @game = create(:game, time: TIME_29_01_2013_12_00)
-      @mail = PlayerMailer.notification_email @szlachta, @game
+      @mail = PlayerMailer.notification_email(@szlachta, @game)
     end
 
     it 'renders the headers' do
