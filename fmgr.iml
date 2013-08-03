@@ -86,6 +86,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.1, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v4.7.5, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.7, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="newrelic_rpm (v3.6.6.147, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.16.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="poltergeist (v1.3.0, RVM: ruby-2.0.0-p195 [fmgr]) [gem]" level="application" />
