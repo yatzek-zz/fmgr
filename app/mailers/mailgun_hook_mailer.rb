@@ -1,5 +1,3 @@
-# heroku mailer settings, copied from: https://devcenter.heroku.com/articles/mailgun
-
 class MailgunHookMailer < ActionMailer::Base
 
   default from: 'noreply@fmgr.heroku.com'
