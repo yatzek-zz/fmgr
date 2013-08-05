@@ -12,16 +12,18 @@
 
 class Game < ActiveRecord::Base
 
+  #Thursday 10-Jan-2013 08:00
+  TIME_FORMAT = '%A %d-%b-%Y %H:%M'
+
   validates :time, :game_definition, :presence => true
   validates :time, :uniqueness => {:scope => :game_definition_id}
 
   belongs_to :game_definition
 
   has_many :player_games
-  has_many :players, -> { order('player_games.created_at') }, :through => :player_games
+  has_many :players, -> {order('player_games.created_at ASC')}, :through => :player_games
 
-  #Thursday 10-Jan-2013 08:00
-  TIME_FORMAT = '%A %d-%b-%Y %H:%M'
+  scope :future_by_date, -> {where('time > ?', Time.now).order('time ASC')}
 
   def time_formatted
     time.strftime(TIME_FORMAT)

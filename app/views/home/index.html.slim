@@ -1,10 +1,11 @@
-- if @game
+- if @games_to_play && !@games_to_play.empty?
 
-  h1 Game on #{@game.time_formatted}
-  p Players
-  ol
-    - @game.players.andand.each do |player|
-      li #{player.email}
+  - @games_to_play.each do |game|
+    h1 Game on #{game.time_formatted}
+    p Players
+    ol
+      - game.players.andand.each do |player|
+        li = player.email
 
 - else
 
