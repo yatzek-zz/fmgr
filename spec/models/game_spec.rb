@@ -11,6 +11,7 @@
 #
 
 require 'spec_helper'
+require 'timecop'
 
 describe 'Game' do
 
@@ -32,6 +33,39 @@ describe 'Game' do
 
     create(:game, game_definition: game_definition, time: time)
     build(:game, game_definition: game_definition, time: time).should_not be_valid
+  end
+
+
+  describe 'future_by_date scope' do
+
+    before(:all) do
+      @time_10_01_2013_11_00 = Time.local(2013, 1, 10, 11, 0, 0)
+      @time_10_01_2013_13_00 = Time.local(2013, 1, 10, 13, 0, 0)
+      @time_17_01_2013_13_00 = Time.local(2013, 1, 17, 13, 0, 0)
+    end
+
+    it 'shows only future games' do
+      Timecop.freeze @time_10_01_2013_13_00
+      game_definition = create(:game_definition)
+      create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
+      create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
+
+      Game.future_by_date.size.should == 1
+    end
+
+    it 'ordered by date with the closest game at the top of the list' do
+      Timecop.freeze @time_10_01_2013_11_00
+      game_definition = create(:game_definition)
+      create(:game, game_definition: game_definition, time: @time_10_01_2013_13_00)
+      create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
+
+      future_games = Game.future_by_date
+      future_games.size.should == 2
+
+      future_games.first.time.should == @time_10_01_2013_13_00
+      future_games.last.time.should == @time_17_01_2013_13_00
+    end
+
   end
 
   describe 'has periodic job which' do
