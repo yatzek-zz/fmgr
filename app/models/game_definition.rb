@@ -24,10 +24,10 @@ class GameDefinition < ActiveRecord::Base
 
   # game instance creation
   # run daily
-  def self.create_games
-    game_definitions = GameDefinition.all
-    game_definitions.each do |game_definition|
+  def self.create_games(include_disabled = false)
+    game_definitions = GameDefinition.where(include_disabled ? {} : {disabled: false})
 
+    game_definitions.each do |game_definition|
       now = Time.now
       next_game_time = game_definition.next_game_time
 
@@ -41,8 +41,8 @@ class GameDefinition < ActiveRecord::Base
         end
 
       end
-
     end
+
   end
 
 
