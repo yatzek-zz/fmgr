@@ -7,6 +7,7 @@
 #  time       :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  disabled   :boolean
 #
 
 require 'chronic'
@@ -15,6 +16,7 @@ class GameDefinition < ActiveRecord::Base
 
   validates :day, :time, :presence => true
   validates :time, :uniqueness => {:scope => :day}
+  attr_default :disabled, false
 
   CREATE_GAME_BEFORE_DAYS = 5 * 24 * 60 * 60
 

@@ -91,6 +91,9 @@ Spork.prefork do
     # enough to say: :focus rather than: :focus => true
     config.treat_symbols_as_metadata_keys_with_true_values = true
 
+    config.after(:each) do
+      Timecop.return
+    end
   end
 
 end

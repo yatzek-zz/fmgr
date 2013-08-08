@@ -51,6 +51,7 @@ describe 'Game' do
       create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
 
       Game.future_by_date.size.should == 1
+      Timecop.return
     end
 
     it 'ordered by date with the closest game at the top of the list' do
@@ -64,6 +65,7 @@ describe 'Game' do
 
       future_games.first.time.should == @time_10_01_2013_13_00
       future_games.last.time.should == @time_17_01_2013_13_00
+      Timecop.return
     end
 
   end

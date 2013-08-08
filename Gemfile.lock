@@ -38,6 +38,8 @@ GEM
       rake
     arel (4.0.0)
     atomic (1.1.10)
+    attribute-defaults (0.6.0)
+      activerecord (>= 3.0.0)
     awesome_print (1.1.0)
     better_errors (0.9.0)
       coderay (>= 1.0.0)
@@ -261,6 +263,7 @@ PLATFORMS
 DEPENDENCIES
   andand
   annotate
+  attribute-defaults
   better_errors
   binding_of_caller
   bootstrap-sass
