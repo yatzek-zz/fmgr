@@ -26,6 +26,10 @@ describe 'GameDefinition' do
     TIME_10_01_2013_13_00 = Time.local(2013, 1, 10, 13, 0, 0)
     TIME_17_01_2013_13_00 = Time.local(2013, 1, 17, 13, 0, 0)
 
+    after(:each) do
+      Timecop.return
+    end
+
     it 'does not create next game instance if not withing creation period' do
       @tue_12_00_game = create :game_definition
       Timecop.freeze TIME_10_01_2013_11_00 # more than 5 days before the game, next game: 15.01.2013 12:00

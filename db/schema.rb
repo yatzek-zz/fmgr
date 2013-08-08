@@ -16,32 +16,32 @@ ActiveRecord::Schema.define(version: 20130805210406) do
   create_table "game_definitions", force: true do |t|
     t.string   "day"
     t.string   "time"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.boolean  "disabled"
   end
 
   create_table "games", force: true do |t|
     t.integer  "game_definition_id"
     t.datetime "time"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
-    t.boolean  "emails_sent",        default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "emails_sent"
   end
 
   create_table "player_games", force: true do |t|
     t.integer  "player_id"
     t.integer  "game_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "players", force: true do |t|
     t.string   "name"
     t.string   "surname"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

@@ -17,6 +17,7 @@ class Game < ActiveRecord::Base
 
   validates :time, :game_definition, :presence => true
   validates :time, :uniqueness => {:scope => :game_definition_id}
+  attr_default :emails_sent, false
 
   belongs_to :game_definition
 
