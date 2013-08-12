@@ -24,8 +24,7 @@ class PlayerGameController < ApplicationController
   end
 
   def player_game_details(game_id, player_id)
-    game = Game.find(game_id)
-    @players = game.players
+    @game = Game.find(game_id)
     @player = Player.find(player_id)
   end
 

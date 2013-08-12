@@ -1,7 +1,11 @@
-p #{@player.email} has been added!
+- if @game.time.past?
+  p.warn Wrong link? This game has already been played!
 
+p #{@player.email} has been added - game on #{@game.time_formatted}!
+
+p Players for this game:
 ol
-  - @players.each do |player|
+  - @game.players.each do |player|
     li =player.email
 
 = link_to('Home', root_path)
