@@ -18,10 +18,10 @@ describe 'PlayerMailer' do
 
     it 'renders the body' do
       sub_link = LinkUtils.subscribe_link(szlachta.id, game.id)
-      unsub_link = LinkUtils.unsubscribe_link(szlachta.id, game.id)
+      #unsub_link = LinkUtils.unsubscribe_link(szlachta.id, game.id)
 
       expect(mail.body.encoded).to include "To play click this link: <a href=\"#{sub_link}\">#{sub_link}</a>"
-      expect(mail.body.encoded).to include "To unclick the click use this link: <a href=\"#{unsub_link}\">#{unsub_link}</a>"
+      #expect(mail.body.encoded).to include "To unclick the click use this link: <a href=\"#{unsub_link}\">#{unsub_link}</a>"
     end
 
   end
