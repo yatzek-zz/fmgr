@@ -14,6 +14,6 @@
 .reserve-player {
   color: orange;
   &:after {
-    content: 'Reserve - please bring your kit';
+    content: '(reserve - please bring your kit)';
   }
 }
