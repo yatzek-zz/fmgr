@@ -1,5 +1,3 @@
-require 'spec_helper'
-require 'timecop'
 
 describe 'GameDefinition' do
 
