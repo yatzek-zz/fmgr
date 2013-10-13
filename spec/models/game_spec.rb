@@ -1,4 +1,3 @@
-
 describe 'Game' do
 
   it 'has a valid factory' do
@@ -20,7 +19,6 @@ describe 'Game' do
     create(:game, game_definition: game_definition, time: time)
     build(:game, game_definition: game_definition, time: time).should_not be_valid
   end
-
 
   describe 'future_by_date scope' do
 
@@ -56,14 +54,14 @@ describe 'Game' do
 
   end
 
-  describe 'has periodic job which' do
+  describe 'has periodic game subscription job which' do
 
     it 'does not send emails to players if there are no game instances' do
       Game.send_notification_emails
       email_deliveries.should be_empty
     end
 
-    it 'does not send emails to players for an old game instance' do
+    it 'does not send emails to players for a game for which emails have already been sent' do
       game_definition = create(:game_definition)
       create(:game, game_definition: game_definition,
                     time: game_definition.next_game_time,
@@ -85,6 +83,55 @@ describe 'Game' do
       last_email.to.should include szlachta.email
       game.reload
       game.emails_sent.should be_true
+    end
+
+  end
+
+  describe 'has periodic game reminder job which' do
+
+    it 'sends reminder emails to players for games to be played next day' do
+      time_14_10_2013_15_00 = Time.local(2013, 10, 14, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_14_10_2013_15_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
+      szlachta = create(:szlachta)
+      create(:player_game, player: szlachta, game: game)
+
+      Game.send_game_reminders(1)
+      last_email.to.should include szlachta.email
+      Timecop.return
+    end
+
+    it 'does not send reminder emails to players for games already played' do
+      time_15_10_2013_15_00 = Time.local(2013, 10, 15, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_15_10_2013_15_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
+      szlachta = create(:szlachta)
+      create(:player_game, player: szlachta, game: game)
+
+      Game.send_game_reminders(1)
+      email_deliveries.should be_empty
+      Timecop.return
+    end
+
+    it 'does not send reminder emails to players for games to be played later than next day' do
+      time_13_10_2013_15_00 = Time.local(2013, 10, 13, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_13_10_2013_15_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
+      szlachta = create(:szlachta)
+      create(:player_game, player: szlachta, game: game)
+
+      Game.send_game_reminders(1)
+      email_deliveries.should be_empty
+      Timecop.return
     end
 
   end

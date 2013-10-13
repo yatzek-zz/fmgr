@@ -10,12 +10,17 @@ task :scale, :instances do |t, args|
   heroku.post_ps_scale(APP_NAME, 'web', args[:instances])
 end
 
-desc 'create games periodic task'
+desc 'create games periodic'
 task :create_games => :environment do
   GameDefinition.create_games
 end
 
-desc 'send notification emails task'
+desc 'send notification emails'
 task :send_notification_emails => :environment do
   Game.send_notification_emails
+end
+
+desc 'send game reminders - at 15:00 on a day before the game'
+task :send_game_reminders => :environment do
+  Game.send_game_reminders
 end
