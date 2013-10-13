@@ -1,17 +1,3 @@
-# == Schema Information
-#
-# Table name: games
-#
-#  id                 :integer          not null, primary key
-#  game_definition_id :integer
-#  time               :datetime
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#  emails_sent        :boolean          default(FALSE)
-#
-
-require 'spec_helper'
-require 'timecop'
 
 describe 'Game' do
 

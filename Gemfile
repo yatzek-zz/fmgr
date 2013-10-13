@@ -23,7 +23,7 @@ gem 'pg'
 #gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
 gem 'chronic'
 gem 'encryptor'
-gem 'data_table'  #, github: 'yatzek/data_table'
+gem 'data_table'
 gem 'will_paginate'
 gem 'andand'
 gem 'rails_12factor', group: :production
@@ -37,13 +37,14 @@ group :development, :test do
 
   # cool stuff
   gem 'rails_best_practices'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'bullet'
+  #gem 'better_errors'
+  #gem 'binding_of_caller'
+  #gem 'bullet'
   #
 
   # guard + spork
   gem 'rb-inotify'
+  gem 'guard'
   gem 'guard-rspec'
   gem 'guard-livereload'
   gem 'rack-livereload'

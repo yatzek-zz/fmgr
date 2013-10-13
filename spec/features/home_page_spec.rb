@@ -1,5 +1,3 @@
-require 'spec_helper'
-require 'timecop'
 
 feature 'Home page' do
 

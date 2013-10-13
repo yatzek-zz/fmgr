@@ -1,4 +1,4 @@
-require 'rubygems'
+require 'timecop'
 require 'spork'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
@@ -10,16 +10,16 @@ Spork.prefork do
   # need to restart spork for it take effect.
 
   # This file is copied to spec/ when you run 'rails generate rspec:install'
-  ENV["RAILS_ENV"] ||= 'test'
+  ENV['RAILS_ENV'] ||= 'test'
 
-  puts "Rails env: #{ENV["RAILS_ENV"]}"
+  puts "Rails env: #{ENV['RAILS_ENV']}"
 
   require 'rails/application'
   #Spork.trap_method(Rails::Application, :reload_routes!) # Rails 3.0
   Spork.trap_method(Rails::Application::RoutesReloader, :reload!) # Rails 3.1+
   # Prevent main application to eager_load in the prefork block (do not load files in autoload_paths)
   Spork.trap_method(Rails::Application, :eager_load!)
-  require File.expand_path("../../config/environment", __FILE__)
+  require File.expand_path('../../config/environment', __FILE__)
   # Load all railties files
 
   # TODO: fix this - commented out during migration to rails 4
@@ -35,7 +35,7 @@ Spork.prefork do
 
   # Requires supporting ruby files with custom matchers and macros, etc,
   # in spec/support/ and its subdirectories.
-  Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
+  Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
   RSpec.configure do |config|
     # ## Mock Framework
@@ -63,7 +63,7 @@ Spork.prefork do
     # order dependency and want to debug it, you can fix the order by providing
     # the seed, which is printed after each run.
     #     --seed 1234
-    config.order = "random"
+    config.order = :random
 
     # Include Factory Girl syntax to simplify calls to factories
     config.include FactoryGirl::Syntax::Methods
