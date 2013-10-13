@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b31dccd-000c-415a-9035-118b4c88b539" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/TODO" afterPath="$PROJECT_DIR$/doc/TODO" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfmgr.iws" />
@@ -15,7 +12,7 @@
     <ignored path=".idea/dataSources.ids" />
     <ignored path=".idea/inspectionProfiles/profiles_settings.xml" />
     <ignored path=".idea/inspectionProfiles/Project_Default.xml" />
-    <file path="/Dummy.txt" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381676630455" ignored="false" />
+    <file path="/Dummy.txt" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381678434038" ignored="false" />
     <file path="/test.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939758121" ignored="false" />
     <file path="/test.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365628080587" ignored="false" />
     <file path="/test.haml" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365628108950" ignored="false" />
@@ -98,6 +95,7 @@
     <file path="/view_helper_spec.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939919128" ignored="false" />
     <file path="/.rspec" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381675262392" ignored="false" />
     <file path="/.travis.yml" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381678323925" ignored="false" />
+    <file path="/README.rdoc" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381679180126" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,10 +176,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.travis.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="database.travis.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="62" selection-end="70" vertical-scroll-proportion="0.053624626">
+            <state line="3" column="43" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.rdoc" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.rdoc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.017874876">
               <folding />
             </state>
           </provider>
@@ -209,7 +216,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.rspec" />
         <option value="$PROJECT_DIR$/spec/features/contact_us_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/mailgun_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/player_game_spec.rb" />
@@ -225,6 +231,7 @@
         <option value="$PROJECT_DIR$/config/database.travis.yml" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/README.rdoc" />
       </list>
     </option>
   </component>
@@ -1476,7 +1483,11 @@
       <created>1381676632782</created>
       <updated>1381676632782</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="travis ci integration">
+      <created>1381678436829</created>
+      <updated>1381678436829</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1654,13 +1665,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/player_game.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="23" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
@@ -1724,13 +1728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rdoc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7896214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.ruby-version">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="10" selection-start="0" selection-end="10" vertical-scroll-proportion="0.0">
@@ -1759,9 +1756,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/nokogiri-1.6.0/ext/nokogiri/tmp/x86_64-linux-gnu/ports/libxml2/2.8.0/libxml2-2.8.0/doc/README.docs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="62" selection-end="70" vertical-scroll-proportion="0.053624626">
+        <state line="3" column="43" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.017874876">
           <folding />
         </state>
       </provider>
