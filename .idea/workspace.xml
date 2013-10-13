@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b31dccd-000c-415a-9035-118b4c88b539" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rspec" afterPath="$PROJECT_DIR$/.rspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Guardfile" afterPath="$PROJECT_DIR$/Guardfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/contact_us_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/features/contact_us_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fmgr.iml" afterPath="$PROJECT_DIR$/fmgr.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/game_definition_spec.rb" afterPath="$PROJECT_DIR$/spec/models/game_definition_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/game_spec.rb" afterPath="$PROJECT_DIR$/spec/models/game_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/home_page_spec.rb" afterPath="$PROJECT_DIR$/spec/features/home_page_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/mailgun_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/mailgun_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb" afterPath="$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/player_game_spec.rb" afterPath="$PROJECT_DIR$/spec/features/player_game_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/player_game_spec.rb" afterPath="$PROJECT_DIR$/spec/models/player_game_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb" afterPath="$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/player_spec.rb" afterPath="$PROJECT_DIR$/spec/models/player_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/database.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/TODO" afterPath="$PROJECT_DIR$/doc/TODO" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfmgr.iws" />
@@ -27,7 +15,7 @@
     <ignored path=".idea/dataSources.ids" />
     <ignored path=".idea/inspectionProfiles/profiles_settings.xml" />
     <ignored path=".idea/inspectionProfiles/Project_Default.xml" />
-    <file path="/Dummy.txt" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381674603639" ignored="false" />
+    <file path="/Dummy.txt" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381676630455" ignored="false" />
     <file path="/test.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939758121" ignored="false" />
     <file path="/test.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365628080587" ignored="false" />
     <file path="/test.haml" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365628108950" ignored="false" />
@@ -83,7 +71,7 @@
     <file path="/secret_token.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1374448754466" ignored="false" />
     <file path="/game_definition.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375993929402" ignored="false" />
     <file path="/20120917211847_create_players.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1374533997089" ignored="false" />
-    <file path="/TODO" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375631111908" ignored="false" />
+    <file path="/TODO" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381676798645" ignored="false" />
     <file path="/development.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375359309837" ignored="false" />
     <file path="/newrelic.yml" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375475467296" ignored="false" />
     <file path="/mailgun_controller.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375483030988" ignored="false" />
@@ -109,6 +97,7 @@
     <file path="/view_helper.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376940242903" ignored="false" />
     <file path="/view_helper_spec.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939919128" ignored="false" />
     <file path="/.rspec" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381675262392" ignored="false" />
+    <file path="/.travis.yml" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381678323925" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,91 +160,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mailgun_hook_mailer_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb">
+      <file leaf-file-name=".travis.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="5" column="25" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="player_mailer_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb">
+      <file leaf-file-name="TODO" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doc/TODO">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="13" column="35" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_definition_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/game_definition_spec.rb">
+      <file leaf-file-name="database.travis.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/models/game_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_game_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/player_game_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/player_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mailgun_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/controllers/mailgun_controller_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home_page_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/home_page_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="spec_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="9" selection-end="16" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_game_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/features/player_game_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="3" column="20" selection-start="62" selection-end="70" vertical-scroll-proportion="0.053624626">
               <folding />
             </state>
           </provider>
@@ -283,10 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/helpers/view_helper.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-        <option value="$PROJECT_DIR$/Guardfile" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/.rspec" />
         <option value="$PROJECT_DIR$/spec/features/contact_us_controller_spec.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/mailgun_controller_spec.rb" />
@@ -299,6 +221,10 @@
         <option value="$PROJECT_DIR$/spec/features/home_page_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/game_definition_spec.rb" />
         <option value="$PROJECT_DIR$/spec/models/game_spec.rb" />
+        <option value="$PROJECT_DIR$/doc/TODO" />
+        <option value="$PROJECT_DIR$/config/database.travis.yml" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -384,10 +310,6 @@
               <option name="myItemId" value="fmgr" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -459,11 +381,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
+              <option name="myItemId" value="doc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -477,11 +395,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1025,15 +939,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the body" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the headers" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.test" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.home_page_spec" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
-      <item index="5" class="java.lang.String" itemvalue="Rails.Development: fmgr" />
-      <item index="6" class="java.lang.String" itemvalue="Rails.Production: fmgr" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="8" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="0" class="java.lang.String" itemvalue="Rails.Development: fmgr" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Production: fmgr" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the body" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the headers" />
+      <item index="6" class="java.lang.String" itemvalue="Ruby.test" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.home_page_spec" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1550,7 +1464,19 @@
       <created>1381674609281</created>
       <updated>1381674609281</updated>
     </task>
-    <option name="localTasksCounter" value="120" />
+    <task id="LOCAL-00120" summary="rspec tidy-up, problems with guard">
+      <created>1381675586956</created>
+      <updated>1381675586956</updated>
+    </task>
+    <task id="LOCAL-00121" summary="travis ci integration">
+      <created>1381676382072</created>
+      <updated>1381676382072</updated>
+    </task>
+    <task id="LOCAL-00122" summary="travis ci integration">
+      <created>1381676632782</created>
+      <updated>1381676632782</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1648,7 +1574,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="use rbenv instead of rvm, updated gems, tidy-up" />
+    <option name="LAST_COMMIT_MESSAGE" value="travis ci integration" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1662,8 +1588,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="show last game on the landing page" />
-    <MESSAGE value="add time zone" />
     <MESSAGE value="remove name and surname validations on player model, update seed file" />
     <MESSAGE value="allow to send emails to all players" />
     <MESSAGE value="add link to home on the subscribe pages" />
@@ -1687,6 +1611,8 @@
     <MESSAGE value="remove unsubscribe link" />
     <MESSAGE value="reserve player display on the home page" />
     <MESSAGE value="use rbenv instead of rvm, updated gems, tidy-up" />
+    <MESSAGE value="rspec tidy-up, problems with guard" />
+    <MESSAGE value="travis ci integration" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1728,56 +1654,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/binding_of_caller-0.7.2/lib/binding_of_caller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Guardfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.rspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="21" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/contact_us_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/player_game_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1807,7 +1684,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/mailgun_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+        <state line="1" column="0" selection-start="1" selection-end="1" vertical-scroll-proportion="0.012622721">
           <folding />
         </state>
       </provider>
@@ -1826,6 +1703,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/game_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/game_definition_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1833,9 +1717,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/game_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="9" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.rdoc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7896214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ruby-version">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="10" selection-start="0" selection-end="10" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/TODO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="35" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="25" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="62" selection-end="70" vertical-scroll-proportion="0.053624626">
           <folding />
         </state>
       </provider>

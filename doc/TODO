@@ -17,5 +17,5 @@ Technical tasks:
     spork or rerun - something to run test on change (replace spork with either zeus or spring)
     indexes
     foreign keys
-    continuous delivery - free ruby CI
+    DONE: continuous delivery - free ruby CI
     performance tests - https://github.com/rails/rails-perftest
