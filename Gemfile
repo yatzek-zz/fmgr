@@ -2,38 +2,33 @@ source 'https://rubygems.org'
 
 ruby '2.0.0'
 gem 'rails'         , '4.0.0'
+
+# assets
+gem 'sass-rails'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'bootstrap-sass'
+gem 'jquery-datatables-rails'
+gem 'therubyracer'
+gem 'uglifier'
+# assets
+
 gem 'slim-rails'
-
-# Gems used only for assets and not required
-# in production environments by default.
-#group :assets do
-  gem 'sass-rails'
-  gem 'coffee-rails'
-
-  gem 'jquery-rails'
-  gem 'bootstrap-sass'
-  gem 'jquery-datatables-rails'
-
-  gem 'therubyracer'
-  gem 'uglifier'
-#end
-
 gem 'heroku-api'
 gem 'encryptor'
-
 gem 'thin'
 gem 'pg'
 #gem 'rack-fiber_pool'
 #gem 'em-synchrony'
 #gem 'em-postgresql-adapter', :git => 'git://github.com/leftbee/em-postgresql-adapter.git'
-
 gem 'chronic'
 gem 'encryptor'
-
-gem 'data_table', github: 'yatzek/data_table'
+gem 'data_table'  #, github: 'yatzek/data_table'
 gem 'will_paginate'
 gem 'andand'
-
+gem 'rails_12factor', group: :production
+gem 'newrelic_rpm'
+gem 'attribute-defaults'
 
 group :development, :test do
   gem 'rspec-rails'
@@ -44,9 +39,8 @@ group :development, :test do
   gem 'rails_best_practices'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'bullet'            # finds n+1 querries
+  gem 'bullet'
   #
-
 
   # guard + spork
   gem 'rb-inotify'
@@ -68,19 +62,3 @@ group :test do
   gem 'xpath'
   gem 'timecop'
 end
-
-gem 'rails_12factor', group: :production
-gem 'newrelic_rpm'
-gem 'attribute-defaults'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# To use Jbuilder templates for JSON
-# gem 'jbuilder'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# To use debugger
-#gem 'ruby-debug19', :require => 'ruby-debug'
