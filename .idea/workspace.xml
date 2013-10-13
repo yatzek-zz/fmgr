@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b31dccd-000c-415a-9035-118b4c88b539" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/player_game_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/player_game_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/features/player_game_spec.rb" afterPath="$PROJECT_DIR$/spec/features/player_game_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/player_game/subscribe.html.slim" afterPath="$PROJECT_DIR$/app/views/player_game/subscribe.html.slim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/player_game/unsubscribe.html.slim" afterPath="$PROJECT_DIR$/app/views/player_game/unsubscribe.html.slim" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.ruby-gemset" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ruby-version" afterPath="$PROJECT_DIR$/.ruby-version" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fmgr.iml" afterPath="$PROJECT_DIR$/fmgr.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tfmgr.iws" />
@@ -16,14 +17,14 @@
     <ignored path=".idea/dataSources.ids" />
     <ignored path=".idea/inspectionProfiles/profiles_settings.xml" />
     <ignored path=".idea/inspectionProfiles/Project_Default.xml" />
-    <file path="/Dummy.txt" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376333004905" ignored="false" />
-    <file path="/test.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375736875859" ignored="false" />
+    <file path="/Dummy.txt" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381670321195" ignored="false" />
+    <file path="/test.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939758121" ignored="false" />
     <file path="/test.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365628080587" ignored="false" />
     <file path="/test.haml" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365628108950" ignored="false" />
     <file path="/routes.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375482689004" ignored="false" />
     <file path="/slim_controller.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1365708593753" ignored="false" />
     <file path="/new.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366053199238" ignored="false" />
-    <file path="/index.html.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375741400938" ignored="false" />
+    <file path="/index.html.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939644594" ignored="false" />
     <file path="/application.html.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366055414318" ignored="false" />
     <file path="/new.html.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366057125864" ignored="false" />
     <file path="/notification_email.text.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366058272850" ignored="false" />
@@ -32,11 +33,11 @@
     <file path="/_form.html.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366061185691" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xml.xsd" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366307749461" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1366307749461" ignored="false" />
-    <file path="/Gemfile" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1375993841792" ignored="false" />
+    <file path="/Gemfile" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381672468057" ignored="false" />
     <file path="/players.js.coffee" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1368053482823" ignored="false" />
     <file path="/players_controller.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1374525267213" ignored="false" />
-    <file path="/a.dummy" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376231515408" ignored="false" />
-    <file path="/application.css.scss" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376335017677" ignored="false" />
+    <file path="/a.dummy" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1381672501648" ignored="false" />
+    <file path="/application.css.scss" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376940563148" ignored="false" />
     <file path="/players.js" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1368131963067" ignored="false" />
     <file path="$PROJECT_DIR$/../mysky-cms/.rvmrc" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1368210089704" ignored="false" />
     <file path="/.rvmrc" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1368207829669" ignored="false" />
@@ -95,6 +96,8 @@
     <file path="$PROJECT_DIR$/../sass_tryouts/config.ru" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376233041317" ignored="false" />
     <file path="/index.slim" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376248232589" ignored="false" />
     <file path="$PROJECT_DIR$/../sass_tryouts/public/css/styles.css" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376249448456" ignored="false" />
+    <file path="/view_helper.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376940242903" ignored="false" />
+    <file path="/view_helper_spec.rb" changelist="6b31dccd-000c-415a-9035-118b4c88b539" time="1376939919128" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,46 +160,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="player_game_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/player_game_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="4" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="subscribe.html.slim" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/player_game/subscribe.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="9" selection-start="31" selection-end="77" vertical-scroll-proportion="-0.6666667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player_game_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/features/player_game_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="83" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.78154683">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unsubscribe.html.slim" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/player_game/unsubscribe.html.slim">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="0" selection-end="78" vertical-scroll-proportion="-1.3333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="player_game.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/player_game.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="7" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+            <state line="26" column="23" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailgun_hook_mailer_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="3" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="60" selection-start="821" selection-end="821" vertical-scroll-proportion="0.714995">
               <folding />
             </state>
           </provider>
@@ -224,22 +209,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/models/game_definition.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121127234320_create_game_definitions.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130115212348_create_player_game_instances.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20120917211847_create_players.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20121127235411_create_game_instances.rb" />
-        <option value="$PROJECT_DIR$/spec/models/game_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/game_definition_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/home_page_spec.rb" />
         <option value="$PROJECT_DIR$/app/controllers/player_game_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/game.rb" />
         <option value="$PROJECT_DIR$/app/views/player_game/unsubscribe.html.slim" />
         <option value="$PROJECT_DIR$/app/views/player_game/subscribe.html.slim" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
         <option value="$PROJECT_DIR$/spec/features/player_game_spec.rb" />
+        <option value="$PROJECT_DIR$/app/views/player_mailer/notification_email.html.slim" />
+        <option value="$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb" />
+        <option value="$PROJECT_DIR$/test.rb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.slim" />
+        <option value="$PROJECT_DIR$/spec/helpers/view_helper_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/view_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -256,7 +241,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="69" />
+    <option name="x" value="56" />
     <option name="y" value="24" />
     <option name="width" value="1253" />
     <option name="height" value="1577" />
@@ -317,6 +302,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,21 +349,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="features" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="mailers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,7 +389,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="player_game" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,88 +404,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fmgr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
@@ -538,8 +433,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sass_tryouts" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
+    <property name="last_opened_file_path" value="$USER_HOME$/.rbenv/versions/2.0.0-p247/bin/ruby" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
@@ -584,7 +479,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.player_game_spec">
+  <component name="RunManager" selected="Ruby.test">
     <configuration default="false" name="PlayerMailer notification_email renders the body" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="fmgr" />
@@ -998,23 +893,23 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Development: fmgr" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Production: fmgr" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the body" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the headers" />
-      <item index="6" class="java.lang.String" itemvalue="Ruby.test" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.home_page_spec" />
-      <item index="8" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the body" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.PlayerMailer notification_email renders the headers" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.test" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.home_page_spec" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Development: fmgr" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Production: fmgr" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="8" class="java.lang.String" itemvalue="Rake.test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.test" />
         <item index="1" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
         <item index="2" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.home_page_spec" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.player_game_spec" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.home_page_spec" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1503,7 +1398,23 @@
       <created>1375996749619</created>
       <updated>1375996749619</updated>
     </task>
-    <option name="localTasksCounter" value="115" />
+    <task id="LOCAL-00115" summary="subscribe/unsubscribe improvements - show warning for past games">
+      <created>1376339352426</created>
+      <updated>1376339352426</updated>
+    </task>
+    <task id="LOCAL-00116" summary="remove unsubscribe link">
+      <created>1376510606502</created>
+      <updated>1376510606502</updated>
+    </task>
+    <task id="LOCAL-00117" summary="reserve player display on the home page">
+      <created>1376940422468</created>
+      <updated>1376940422468</updated>
+    </task>
+    <task id="LOCAL-00118" summary="reserve player display on the home page">
+      <created>1376940590191</created>
+      <updated>1376940590191</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1527,18 +1438,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="69" y="24" width="1253" height="1577" extended-state="4" />
+    <frame x="56" y="24" width="1253" height="1577" extended-state="4" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45730028" sideWeight="0.49769887" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28856748" sideWeight="0.49769887" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943603" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3147383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291829" sideWeight="0.77408177" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2033195" sideWeight="0.6577135" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23817427" sideWeight="0.7114325" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39850137" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39501038" sideWeight="0.49769887" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3415978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34112793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="RemoteSynchronizer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32903227" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
@@ -1550,9 +1462,8 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32981315" sideWeight="0.6712428" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3149931" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32571033" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1601,7 +1512,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="attr_default gem - default values for game_definition and game models, fixed flaky tests - missing Timecop.return" />
+    <option name="LAST_COMMIT_MESSAGE" value="reserve player display on the home page" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1615,9 +1526,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="subscribe/unsubscribe game actions" />
-    <MESSAGE value="remove links from the home page" />
-    <MESSAGE value="landing page to show next game" />
     <MESSAGE value="tidy-up" />
     <MESSAGE value="show last game on the landing page" />
     <MESSAGE value="add time zone" />
@@ -1640,6 +1548,9 @@
     <MESSAGE value="added feature to disable game definitions (ad hoc Thursday game)" />
     <MESSAGE value="display all future games ordered by date on the home page" />
     <MESSAGE value="attr_default gem - default values for game_definition and game models, fixed flaky tests - missing Timecop.return" />
+    <MESSAGE value="subscribe/unsubscribe improvements - show warning for past games" />
+    <MESSAGE value="remove unsubscribe link" />
+    <MESSAGE value="reserve player display on the home page" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1681,106 +1592,94 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/models/game_definition_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/home_page_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="13" selection-start="612" selection-end="612" vertical-scroll-proportion="0.5203679" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/robots.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="199" selection-end="199" vertical-scroll-proportion="0.050883394" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="205" selection-end="205" vertical-scroll-proportion="0.074226804" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Guardfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="26" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/player_game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="7" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/player_game_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="4" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="6" selection-start="816" selection-end="830" vertical-scroll-proportion="0.35343617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/player_game/unsubscribe.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="0" selection-end="78" vertical-scroll-proportion="-1.3333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="12" selection-start="94" selection-end="94" vertical-scroll-proportion="0.07573633">
-          <folding />
-        </state>
+        <state line="2" column="0" selection-start="0" selection-end="78" vertical-scroll-proportion="0.025732666" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/player_game/subscribe.html.slim">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="31" selection-end="77" vertical-scroll-proportion="-0.6666667">
+        <state line="10" column="56" selection-start="262" selection-end="262" vertical-scroll-proportion="0.13043478" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/player_game_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="3" selection-start="561" selection-end="561" vertical-scroll-proportion="0.31512606" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="7" selection-start="106" selection-end="106" vertical-scroll-proportion="0.21832883" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/view_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="114" selection-end="114" vertical-scroll-proportion="0.14555256" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/player_mailer/notification_email.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="44" selection-start="137" selection-end="137" vertical-scroll-proportion="0.15104896" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/player_game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="23" selection-start="689" selection-end="689" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/games.rb">
+    <entry file="file://$PROJECT_DIR$/app/utils/link_utils.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="3" column="49" selection-start="87" selection-end="87" vertical-scroll-proportion="0.070773266" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/mailers/player_mailer_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="9" selection-start="976" selection-end="976" vertical-scroll-proportion="0.672" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="33" selection-start="153" selection-end="153" vertical-scroll-proportion="0.21231979" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ruby-version">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="68" selection-start="11" selection-end="11" vertical-scroll-proportion="0.012622721">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/mailers/mailgun_hook_mailer_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="3" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="161" selection-end="161" vertical-scroll-proportion="0.11464968">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="55" selection-start="242" selection-end="242" vertical-scroll-proportion="0.19067797">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="9" selection-start="1140" selection-end="1142" vertical-scroll-proportion="0.8297101">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="44" selection-start="2026" selection-end="2026" vertical-scroll-proportion="0.49228612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/features/player_game_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="83" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.78154683">
+        <state line="40" column="60" selection-start="821" selection-end="821" vertical-scroll-proportion="0.714995">
           <folding />
         </state>
       </provider>
