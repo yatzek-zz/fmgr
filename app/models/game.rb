@@ -54,8 +54,8 @@ class Game < ActiveRecord::Base
       game_players = game.players
 
       if game_players.size >= min_num_of_players
-        game_players.each do |player|
-          GameReminderMailer.reminder_email(player, game).deliver
+        game_players.each_with_index do |player, index|
+          GameReminderMailer.reminder_email(player, game, (index + 1) > min_num_of_players).deliver
         end
       end
 

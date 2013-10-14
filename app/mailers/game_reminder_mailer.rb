@@ -4,7 +4,8 @@ class GameReminderMailer < ActionMailer::Base
 
   default from: 'noreply@fmgr.heroku.com'
 
-  def reminder_email(player, game)
+  def reminder_email(player, game, reserve)
+    @reserve_player = reserve
     mail(:to => player.email,
          :subject => "Footie reminder - game on #{game.time_formatted} at the Goals")
   end
