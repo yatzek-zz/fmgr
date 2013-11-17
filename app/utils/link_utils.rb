@@ -5,9 +5,9 @@ Encryptor.default_options.merge!(:key => Digest::SHA256.hexdigest('verry cekrett
 
 class LinkUtils
 
-  HOST = 'http://fmgr.herokuapp.com'
-  SUBSCRIBE_PATH = '/playergame/subscribe'
-  UNSUBSCRIBE_PATH = '/playergame/unsubscribe'
+  HOST              = 'http://fmgr.herokuapp.com'
+  SUBSCRIBE_PATH    = '/playergame/subscribe'
+  UNSUBSCRIBE_PATH  = '/playergame/unsubscribe'
 
   class << self
 
