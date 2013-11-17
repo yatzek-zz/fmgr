@@ -6,8 +6,4 @@ class MailgunController < ApplicationController
     render inline: 'OK'
   end
 
-  #def delivered_hook
-  #
-  #end
-
 end

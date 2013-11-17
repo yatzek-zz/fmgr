@@ -1,18 +1,13 @@
 Fmgr::Application.routes.draw do
 
-  resources :players
   root :to => 'home#index'
-  #get "home/index"
+  resources :players
 
-  #match 'photos/:id' => 'photos#show'
   get '/playergame/subscribe/:code' => 'player_game#subscribe'
   get '/playergame/unsubscribe/:code' => 'player_game#unsubscribe'
 
-  get '/contact_us' => 'contact_us#new'
-  post '/send_mail' => 'contact_us#send_mail'
-
   post '/mailgun/failed' => 'mailgun#failed_hook'
-  #post '/mailgun/delivered' => ''
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
