@@ -21,6 +21,7 @@ describe 'PlayerMailer' do
 
       expect(mail.body.encoded).to include "To play click this link: <a href=\"#{sub_link}\">#{sub_link}</a>"
       #expect(mail.body.encoded).to include "To unclick the click use this link: <a href=\"#{unsub_link}\">#{unsub_link}</a>"
+      expect(mail.body.encoded).to include 'For the next 6 games we will be collecting 20p more to cover the bibs (&pound;12)'
     end
 
   end

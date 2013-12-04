@@ -1,4 +1,4 @@
-- if @games_to_play && !@games_to_play.empty?
+- if !@games_to_play.empty?
 
   - @games_to_play.each do |game|
     h1 Game on #{game.time_formatted}
@@ -6,6 +6,9 @@
     ol
       - game.players.andand.each_with_index do |player, index|
         li class="#{player_class_for_index(index)}" = player.email
+
+  p.warn
+    | *** For the next 6 games we will be collecting 20p more to cover the bibs (&pound;12) ***
 
 - else
 
