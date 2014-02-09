@@ -14,5 +14,6 @@
 /log/*.log
 /tmp
 .idea
+*.iml
 .env
 .test.rb
