@@ -1,0 +1,16 @@
+Counting all rows in a database (there is a 10k row limit in the current plan)
+
+Connect to the db:
+
+    heroku pg:psql HEROKU_POSTGRESQL_NAVY_URL
+
+and run this statement:
+
+    SELECT
+      nspname AS schemaname,relname,reltuples
+    FROM pg_class C
+    LEFT JOIN pg_namespace N ON (N.oid = C.relnamespace)
+    WHERE
+      nspname NOT IN ('pg_catalog', 'information_schema') AND
+      relkind='r'
+    ORDER BY reltuples DESC;
