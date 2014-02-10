@@ -15,7 +15,6 @@ gem 'uglifier'
 
 gem 'slim-rails'
 gem 'heroku-api'
-gem 'encryptor'
 gem 'thin'
 gem 'pg'
 #gem 'rack-fiber_pool'
@@ -26,9 +25,13 @@ gem 'encryptor'
 gem 'data_table'
 gem 'will_paginate'
 gem 'andand'
-gem 'rails_12factor', group: :production
-gem 'newrelic_rpm'
 gem 'attribute-defaults'
+
+group :production do
+  gem 'rails_12factor'
+  gem 'newrelic_rpm'
+  gem 'heroku-deflater'
+end
 
 group :development, :test do
   gem 'rspec-rails'
