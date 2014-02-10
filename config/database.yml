@@ -18,6 +18,16 @@ test:
   pool: 5
   timeout: 5000
 
+# for local testing
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: fmgr_test
+  username: jacek
+  password:
+  pool: 5
+  timeout: 5000
+
 # heroku db has to be configured from the command line and is being picked up
 # by means of env variables - no need for configuration here
 #production:
