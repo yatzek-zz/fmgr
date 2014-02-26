@@ -17,7 +17,7 @@ describe 'GameReminderMailer' do
       mail = GameReminderMailer.reminder_email(szlachta, game, false)
       mail_body = mail.body.encoded
       mail_body.should include 'Do not forget your kit, please.'
-      mail_body.should include '&pound;4.00 change very much appreciated!'
+      mail_body.should include '&pound;3.80 change very much appreciated!'
       mail_body.should_not include 'You are reserve player for this game.'
       mail_body.should_not include 'Please bring your kit in case someone drops out.'
     end
@@ -26,7 +26,7 @@ describe 'GameReminderMailer' do
       mail = GameReminderMailer.reminder_email(szlachta, game, true)
       mail_body = mail.body.encoded
       mail_body.should_not include 'Do not forget your kit, please.'
-      mail_body.should_not include '&pound;4.00 change very much appreciated!'
+      mail_body.should_not include '&pound;3.80 change very much appreciated!'
       mail_body.should include 'You are reserve player for this game.'
       mail_body.should include 'Please bring your kit in case someone drops out.'
     end

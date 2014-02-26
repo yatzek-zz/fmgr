@@ -18,7 +18,6 @@ feature 'Home page' do
 
       page.should have_content 'Game on Tuesday 29-Jan-2013 12:00'
       page.should have_content 'Players'
-      page.should have_content 'For the next 6 games we will be collecting 20p more to cover the bibs (£12)'
       Timecop.return
     end
 
