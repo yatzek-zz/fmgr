@@ -36,7 +36,7 @@ describe 'Game' do
       create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
       create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
 
-      Game.future_by_date.size.should == 1
+      Game.in_the_future_by_date.size.should == 1
     end
 
     it 'ordered by date with the closest game at the top of the list' do
@@ -45,7 +45,7 @@ describe 'Game' do
       create(:game, game_definition: game_definition, time: @time_10_01_2013_13_00)
       create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
 
-      future_games = Game.future_by_date
+      future_games = Game.in_the_future_by_date
       future_games.size.should == 2
 
       future_games.first.time.should == @time_10_01_2013_13_00

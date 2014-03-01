@@ -12,7 +12,7 @@
 
 class Game < ActiveRecord::Base
 
-  #Thursday 10-Jan-2013 08:00
+  #e.g. Thursday 10-Jan-2013 08:00
   TIME_FORMAT = '%A %d-%b-%Y %H:%M'
   MIN_NUM_OF_PLAYERS = 10
 
@@ -25,7 +25,7 @@ class Game < ActiveRecord::Base
   has_many :player_games
   has_many :players, -> { order('player_games.created_at ASC') }, :through => :player_games
 
-  scope :future_by_date, -> { where('time > ?', Time.now).order('time ASC') }
+  scope :in_the_future_by_date, -> { where('time > ?', Time.now).order('time ASC') }
 
   def time_formatted
     time.strftime(TIME_FORMAT)
