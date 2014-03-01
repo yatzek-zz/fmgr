@@ -26,6 +26,7 @@ class Game < ActiveRecord::Base
   has_many :players, -> { order('player_games.created_at ASC') }, :through => :player_games
 
   scope :in_the_future_by_date, -> { where('time > ?', Time.now).order('time ASC') }
+  scope :all_by_date, -> { order('time DESC') }
 
   def time_formatted
     time.strftime(TIME_FORMAT)

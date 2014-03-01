@@ -1,0 +1,6 @@
+- @games.each do |game|
+  h1 Game on #{game.time_formatted}
+  p Players
+  ol
+    - game.players.andand.each_with_index do |player, index|
+      li class="#{player_class_for_index(index)}" = player.email

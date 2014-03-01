@@ -20,40 +20,6 @@ describe 'Game' do
     build(:game, game_definition: game_definition, time: time).should_not be_valid
   end
 
-  describe 'future_by_date scope' do
-
-    before(:all) do
-      @time_10_01_2013_11_00 = Time.local(2013, 1, 10, 11, 0, 0)
-      @time_10_01_2013_13_00 = Time.local(2013, 1, 10, 13, 0, 0)
-      @time_17_01_2013_13_00 = Time.local(2013, 1, 17, 13, 0, 0)
-    end
-
-    after(:each) {Timecop.return}
-
-    it 'shows only future games' do
-      Timecop.freeze @time_10_01_2013_13_00
-      game_definition = create(:game_definition)
-      create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
-      create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
-
-      Game.in_the_future_by_date.size.should == 1
-    end
-
-    it 'ordered by date with the closest game at the top of the list' do
-      Timecop.freeze @time_10_01_2013_11_00
-      game_definition = create(:game_definition)
-      create(:game, game_definition: game_definition, time: @time_10_01_2013_13_00)
-      create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
-
-      future_games = Game.in_the_future_by_date
-      future_games.size.should == 2
-
-      future_games.first.time.should == @time_10_01_2013_13_00
-      future_games.last.time.should == @time_17_01_2013_13_00
-    end
-
-  end
-
   describe 'has periodic game subscription job which' do
 
     it 'does not send emails to players if there are no game instances' do
@@ -64,8 +30,8 @@ describe 'Game' do
     it 'does not send emails to players for a game for which emails have already been sent' do
       game_definition = create(:game_definition)
       create(:game, game_definition: game_definition,
-                    time: game_definition.next_game_time,
-                    emails_sent: true)
+             time: game_definition.next_game_time,
+             emails_sent: true)
       create(:szlachta)
 
       Game.send_notification_emails
@@ -89,7 +55,7 @@ describe 'Game' do
 
   describe 'has periodic game reminder job which' do
 
-    after(:each) {Timecop.return}
+    after(:each) { Timecop.return }
 
     it 'sends reminder emails to players for games to be played next day' do
       time_14_10_2013_15_00 = Time.local(2013, 10, 14, 15, 0, 0)
@@ -141,5 +107,56 @@ describe 'Game' do
     end
 
   end
+
+  context 'scopes' do
+
+    before(:all) do
+      @time_10_01_2013_11_00 = Time.local(2013, 1, 10, 11, 0, 0)
+      @time_10_01_2013_13_00 = Time.local(2013, 1, 10, 13, 0, 0)
+      @time_17_01_2013_13_00 = Time.local(2013, 1, 17, 13, 0, 0)
+    end
+    after(:each) { Timecop.return }
+
+    describe 'future_by_date scope' do
+      it 'shows only future games' do
+        Timecop.freeze @time_10_01_2013_13_00
+        game_definition = create(:game_definition)
+        create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
+        create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
+
+        Game.in_the_future_by_date.size.should == 1
+      end
+
+      it 'ordered by date with the closest game at the top of the list' do
+        Timecop.freeze @time_10_01_2013_11_00
+        game_definition = create(:game_definition)
+        create(:game, game_definition: game_definition, time: @time_10_01_2013_13_00)
+        create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
+
+        future_games = Game.in_the_future_by_date
+        future_games.size.should == 2
+
+        future_games.first.time.should == @time_10_01_2013_13_00
+        future_games.last.time.should == @time_17_01_2013_13_00
+      end
+    end
+
+    describe 'all_by_date scope' do
+      it 'ordered by date with the closest game at the top of the list' do
+        game_definition = create(:game_definition)
+        create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
+        create(:game, game_definition: game_definition, time: @time_10_01_2013_13_00)
+        create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
+
+        all_by_date = Game.all_by_date
+        all_by_date.size.should == 3
+
+        all_by_date.first.time.should == @time_17_01_2013_13_00
+        all_by_date.second.time.should == @time_10_01_2013_13_00
+        all_by_date.third.time.should == @time_10_01_2013_11_00
+      end
+    end
+  end
+
 
 end

@@ -9,11 +9,4 @@ describe MailgunController do
     end
   end
 
-  #describe "GET 'delivered_hook'" do
-  #  it 'returns http success' do
-  #    post 'delivered_hook'
-  #    response.should be_success
-  #  end
-  #end
-
 end
