@@ -18,6 +18,7 @@ describe 'GameReminderMailer' do
       mail_body = mail.body.encoded
       mail_body.should include 'Do not forget your kit, please.'
       mail_body.should include '&pound;3.80 change very much appreciated!'
+      mail_body.should include 'Please note that if you <b>cancel on the day</b> of the game and there are no subs, you are expected to pay.'
       mail_body.should_not include 'You are reserve player for this game.'
       mail_body.should_not include 'Please bring your kit in case someone drops out.'
     end
