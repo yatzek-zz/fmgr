@@ -1,11 +1,11 @@
 
-describe MailgunController do
+describe MailgunController, type: :controller do
 
-  describe "GET 'failed_hook'" do
+  context "GET 'failed_hook'" do
     it 'returns http success' do
       post 'failed_hook'
-      response.should be_success
-      last_email.to.should include 'jacek.szlachta@gmail.com'
+      expect(response).to be_success
+      expect(last_email.to).to include 'jacek.szlachta@gmail.com'
     end
   end
 

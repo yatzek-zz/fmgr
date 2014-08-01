@@ -1,7 +1,6 @@
-
-@import "dataTables/jquery.dataTables.bootstrap";
+@import "bootstrap-sprockets";
 @import "bootstrap";
-
+@import "dataTables/bootstrap/3/jquery.dataTables.bootstrap";
 
 .warn {
   color: red;

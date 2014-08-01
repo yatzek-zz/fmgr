@@ -1,15 +1,15 @@
 describe 'Game' do
 
   it 'has a valid factory' do
-    create(:game).should be_valid
+    expect(create(:game)).to be_valid
   end
 
   it 'is invalid without a time' do
-    build(:game, time: nil).should_not be_valid
+    expect(build(:game, time: nil)).to_not be_valid
   end
 
   it 'is invalid without a game_definition' do
-    build(:game, game_definition: nil).should_not be_valid
+    expect(build(:game, game_definition: nil)).to_not be_valid
   end
 
   it 'is unique for game_definition and time' do
@@ -17,14 +17,14 @@ describe 'Game' do
     time = game_definition.next_game_time
 
     create(:game, game_definition: game_definition, time: time)
-    build(:game, game_definition: game_definition, time: time).should_not be_valid
+    expect(build(:game, game_definition: game_definition, time: time)).not_to be_valid
   end
 
   describe 'has periodic game subscription job which' do
 
     it 'does not send emails to players if there are no game instances' do
       Game.send_notification_emails
-      email_deliveries.should be_empty
+      expect(email_deliveries).to be_empty
     end
 
     it 'does not send emails to players for a game for which emails have already been sent' do
@@ -36,7 +36,7 @@ describe 'Game' do
 
       Game.send_notification_emails
 
-      email_deliveries.should be_empty
+      expect(email_deliveries).to be_empty
     end
 
     it 'sends emails to players for a new game instance' do
@@ -46,9 +46,9 @@ describe 'Game' do
 
       Game.send_notification_emails
 
-      last_email.to.should include szlachta.email
+      expect(last_email.to).to include szlachta.email
       game.reload
-      game.emails_sent.should be_true
+      expect(game.emails_sent).to eq true
     end
 
   end
@@ -71,9 +71,9 @@ describe 'Game' do
 
       # using double here to test reserve flag is being passed correctly to the mailer
       mail_double = double()
-      mail_double.should_receive(:deliver).twice
-      GameReminderMailer.should_receive(:reminder_email).with(iniesta, game, false).and_return(mail_double)
-      GameReminderMailer.should_receive(:reminder_email).with(szlachta, game, true).and_return(mail_double)
+      expect(mail_double).to receive(:deliver).twice
+      expect(GameReminderMailer).to receive(:reminder_email).with(iniesta, game, false).and_return(mail_double)
+      expect(GameReminderMailer).to receive(:reminder_email).with(szlachta, game, true).and_return(mail_double)
 
       Game.send_game_reminders(1)
     end
@@ -89,7 +89,7 @@ describe 'Game' do
       create(:player_game, player: szlachta, game: game)
 
       Game.send_game_reminders(1)
-      email_deliveries.should be_empty
+      expect(email_deliveries).to be_empty
     end
 
     it 'does not send reminder emails to players for games to be played later than next day' do
@@ -103,7 +103,7 @@ describe 'Game' do
       create(:player_game, player: szlachta, game: game)
 
       Game.send_game_reminders(1)
-      email_deliveries.should be_empty
+      expect(email_deliveries).to be_empty
     end
 
   end
@@ -124,7 +124,7 @@ describe 'Game' do
         create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
         create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
 
-        Game.in_the_future_by_date.size.should == 1
+        expect(Game.in_the_future_by_date.size).to eq 1
       end
 
       it 'ordered by date with the closest game at the top of the list' do
@@ -134,10 +134,10 @@ describe 'Game' do
         create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
 
         future_games = Game.in_the_future_by_date
-        future_games.size.should == 2
+        expect(future_games.size).to eq 2
 
-        future_games.first.time.should == @time_10_01_2013_13_00
-        future_games.last.time.should == @time_17_01_2013_13_00
+        expect(future_games.first.time).to eq @time_10_01_2013_13_00
+        expect(future_games.last.time).to eq @time_17_01_2013_13_00
       end
     end
 
@@ -149,11 +149,11 @@ describe 'Game' do
         create(:game, game_definition: game_definition, time: @time_17_01_2013_13_00)
 
         all_by_date = Game.all_by_date
-        all_by_date.size.should == 3
+        expect(all_by_date.size).to eq 3
 
-        all_by_date.first.time.should == @time_17_01_2013_13_00
-        all_by_date.second.time.should == @time_10_01_2013_13_00
-        all_by_date.third.time.should == @time_10_01_2013_11_00
+        expect(all_by_date.first.time).to eq @time_17_01_2013_13_00
+        expect(all_by_date.second.time).to eq @time_10_01_2013_13_00
+        expect(all_by_date.third.time).to eq @time_10_01_2013_11_00
       end
     end
   end

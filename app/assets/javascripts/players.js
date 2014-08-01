@@ -4,6 +4,7 @@ $.extend( $.fn.dataTableExt.oStdClasses, {
 
 $(document).ready(function() {
   $("#players-table").dataTable({
+    "pagingType"      : "full_numbers",
     "bAutoWidth"      : true,
     "aoColumns"       : [null, null, null, {"bSortable": false}, {"bSortable": false}],
     "bServerSide"     : true,

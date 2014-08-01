@@ -1,12 +1,13 @@
 source 'https://rubygems.org'
 
 ruby '2.1.2'
-gem 'rails', '4.0.3'
+gem 'rails', '4.1.4'
 
 # assets
 gem 'sass-rails'
 gem 'coffee-rails'
 gem 'jquery-rails'
+gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
 gem 'jquery-datatables-rails'
 gem 'therubyracer'

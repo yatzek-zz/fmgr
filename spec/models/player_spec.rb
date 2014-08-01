@@ -2,28 +2,28 @@
 describe 'Player' do
 
   it 'has a valid factory' do
-    create(:messi).should be_valid
+    expect(create(:messi)).to be_valid
   end
 
   it 'is valid without a name' do
-    build(:messi, name: nil).should be_valid
+    expect(build(:messi, name: nil)).to be_valid
   end
 
   it 'is valid with a blank name' do
-    build(:messi, name: '').should be_valid
+    expect(build(:messi, name: '')).to be_valid
   end
 
   it 'is valid without a surname' do
-    build(:messi, surname: nil).should be_valid
+    expect(build(:messi, surname: nil)).to be_valid
   end
 
   it 'is invalid without an email' do
-    build(:messi, email: nil).should_not be_valid
+    expect(build(:messi, email: nil)).not_to be_valid
   end
 
   it 'is invalid without unique email address' do
     create(:messi, email: 'unique@example.com')
-    build(:messi, email: 'unique@example.com').should_not be_valid
+    expect(build(:messi, email: 'unique@example.com')).not_to be_valid
   end
 
 end

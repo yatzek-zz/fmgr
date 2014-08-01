@@ -8,9 +8,9 @@ describe 'MailgunHookMailer' do
     end
 
     it 'renders the headers' do
-      @mail.subject.should == 'Email not delivered mailgun hook'
-      @mail.to.should == %w(jacek.szlachta@gmail.com)
-      @mail.from.should == %w(noreply@fmgr.heroku.com)
+      expect(@mail.subject).to eq 'Email not delivered mailgun hook'
+      expect(@mail.to).to eq %w(jacek.szlachta@gmail.com)
+      expect(@mail.from).to eq %w(noreply@fmgr.heroku.com)
     end
 
     it 'renders the body' do

@@ -10,9 +10,9 @@ describe 'PlayerMailer' do
     let(:mail)      {PlayerMailer.notification_email(szlachta, game)}
 
     it 'renders the headers' do
-      mail.subject.should == 'Want to play 5-a-side on Tuesday 29-Jan-2013 12:00 at the Goals?'
-      mail.to.should == [szlachta.email]
-      mail.from.should == %w(noreply@fmgr.heroku.com)
+      expect(mail.subject).to eq 'Want to play 5-a-side on Tuesday 29-Jan-2013 12:00 at the Goals?'
+      expect(mail.to).to eq [szlachta.email]
+      expect(mail.from).to eq %w(noreply@fmgr.heroku.com)
     end
 
     it 'renders the body' do
