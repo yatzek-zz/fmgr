@@ -1,6 +1,6 @@
 MAIN_APP="fmgr"
 DATABASE_DEPENDENT_APPS="fmgr-api"
-HEROKU_API_KEY_ENC="ZmYxNjhmZDM2MDZmMDcyNzM0OGQ3M2E1YTg0MzI3MmM1MjM0NTlhYQo="
+HEROKU_API_KEY_ENC="OmZmMTY4ZmQzNjA2ZjA3MjczNDhkNzNhNWE4NDMyNzJjNTIzNDU5YWEK"
 
 update_current_database_url(){
   curl -n -X PATCH -sS https://api.heroku.com/apps/$MAIN_APP/config-vars \
