@@ -1,3 +1,5 @@
+# https://devcenter.heroku.com/articles/platform-api-quickstart
+
 MAIN_APP="fmgr"
 DATABASE_DEPENDENT_APPS="fmgr-api"
 HEROKU_API_KEY_ENC="OmZmMTY4ZmQzNjA2ZjA3MjczNDhkNzNhNWE4NDMyNzJjNTIzNDU5YWEK"
