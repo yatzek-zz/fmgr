@@ -11,7 +11,7 @@ update_current_database_url(){
     -o /dev/null
 }
 
-if [[ -z "$CURRENT_DATABASE_URL" ]] ; then
+if [ -z "$CURRENT_DATABASE_URL" ] ; then
   update_current_database_url
 fi
 
