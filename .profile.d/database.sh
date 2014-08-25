@@ -1,3 +1,4 @@
+# http://engineering.qmee.com/2014/05/06/accessing-a-database-from-multiple-apps-on-heroku/
 # https://devcenter.heroku.com/articles/platform-api-quickstart
 
 MAIN_APP="fmgr"
