@@ -73,7 +73,7 @@ class PlayersController < ApplicationController
         format.html { redirect_to @player, notice: 'Player was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render "edit" }
+        format.html { render 'edit' }
         format.json { render json: @player.errors, status: :unprocessable_entity }
       end
     end

@@ -16,6 +16,13 @@ class PlayerGameController < ApplicationController
     player_game_details(game_id, player_id)
   end
 
+  def remove_player
+    player_id, game_id = params[:player_id], params[:game_id]
+
+    PlayerGame.delete_if_exists(player_id, game_id)
+    player_game_details(game_id, player_id)
+  end
+
   :private
 
   def decode_ids(params)

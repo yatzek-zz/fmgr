@@ -3,4 +3,6 @@
   p Players
   ol
     - game.players.andand.each_with_index do |player, index|
-      li class="#{player_class_for_index(index)}" = player.email
+      li class="#{player_class_for_index(index)}"
+        = player.email
+        = link_to('Delete', "/playergame/delete/#{game.id}/#{player.id}", :confirm => 'Are you sure?', :method => :delete)

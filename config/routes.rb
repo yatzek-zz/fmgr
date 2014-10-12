@@ -5,6 +5,7 @@ Fmgr::Application.routes.draw do
   resources :players
 
   get '/playergame/subscribe/:code' => 'player_game#subscribe'
+  delete '/playergame/delete/:game_id/:player_id' => 'player_game#remove_player'
   #get '/playergame/unsubscribe/:code' => 'player_game#unsubscribe'
 
   post '/mailgun/failed' => 'mailgun#failed_hook'

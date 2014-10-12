@@ -24,5 +24,22 @@ feature GameController do
     expect(page).to have_content 'anders.iniesta'
   end
 
+  scenario 'allows to remove players from games' do
+
+    time_22_01_2013_12_00 = Time.local(2013, 1, 22, 12, 0, 0)
+
+    szlachta = create(:szlachta)
+
+    game_definition = create(:game_definition)
+    game_1 = create(:game, game_definition: game_definition, time: time_22_01_2013_12_00)
+
+    create(:player_game, player: szlachta, game: game_1)
+
+    visit '/games'
+
+    click_link('Delete')
+    expect(page).to have_content("jacek.szlachta@gmail.com has been removed - game on #{game_1.time_formatted}")
+
+  end
 
 end
