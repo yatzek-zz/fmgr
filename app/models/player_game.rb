@@ -42,12 +42,14 @@ class PlayerGame < ActiveRecord::Base
       case num
         when 1..MAX_5_A_SIDE
           false
-        when 11..MAX_7_A_SIDE
-          if [12, 14].include?(all_players) || (13 == all_players && num <= MIN_7_A_SIDE)
-            false
-          else
-            true
-          end
+        when 11
+          !(all_players >= MIN_7_A_SIDE)
+        when 12
+          false
+        when 13
+          !(all_players >= MAX_7_A_SIDE)
+        when 14
+          false
         else
           true
       end

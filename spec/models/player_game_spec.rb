@@ -56,16 +56,19 @@ describe PlayerGame do
     context 'more than fourteen players' do
 
       it "15 and above are 'reserve-player'" do
+        (0..13).each do |index|
+          expect(PlayerGame.is_reserve_player?(index, 14)).to eq false
+        end
+
         (14..19).each do |index|
           ((index+1)..20).each do |all_players|
             expect(PlayerGame.is_reserve_player?(index, all_players)).to eq true
           end
         end
-
-
       end
 
     end
+
 
   end
 
