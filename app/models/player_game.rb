@@ -18,16 +18,42 @@ class PlayerGame < ActiveRecord::Base
   validates :game_id, :presence => true
   validates :player_id, :uniqueness => {:scope => :game_id}
 
-  def self.create_if_not_exists(player_id, game_id)
-    unless PlayerGame.exists?(player_id: player_id, game_id: game_id)
-      PlayerGame.new(player_id: player_id, game_id: game_id).save
-    end
-  end
+  class << self
 
-  def self.delete_if_exists(player_id, game_id)
-    if PlayerGame.exists?(player_id: player_id, game_id: game_id)
-      PlayerGame.where(player_id: player_id, game_id: game_id).delete_all
+    def create_if_not_exists(player_id, game_id)
+      unless PlayerGame.exists?(player_id: player_id, game_id: game_id)
+        PlayerGame.new(player_id: player_id, game_id: game_id).save
+      end
     end
+
+    def delete_if_exists(player_id, game_id)
+      if PlayerGame.exists?(player_id: player_id, game_id: game_id)
+        PlayerGame.where(player_id: player_id, game_id: game_id).delete_all
+      end
+    end
+
+    MAX_5_A_SIDE = 10
+    MIN_7_A_SIDE = 12
+    MAX_7_A_SIDE = 14
+
+    def is_reserve_player?(index, all_players)
+      num = index + 1
+
+      case num
+        when 1..MAX_5_A_SIDE
+          false
+        when 11..MAX_7_A_SIDE
+          if [12, 14].include?(all_players) || (13 == all_players && num <= MIN_7_A_SIDE)
+            false
+          else
+            true
+          end
+        else
+          true
+      end
+
+    end
+
   end
 
 end

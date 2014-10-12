@@ -3,7 +3,7 @@
   p Players
   ol
     - game.players.andand.each_with_index do |player, index|
-      li class="#{player_class_for_index(index)}"
+      li class="#{player_class_for_index(index, game.players.size)}"
         = player.email
         - if game == @games.first
           | &nbsp;

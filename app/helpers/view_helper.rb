@@ -1,7 +1,7 @@
 module ViewHelper
 
-  def player_class_for_index(index)
-    index > 9 ? 'reserve-player' : 'base-player'
+  def player_class_for_index(index, all_players)
+    PlayerGame.is_reserve_player?(index, all_players) ? 'reserve-player' : 'base-player'
   end
 
 end

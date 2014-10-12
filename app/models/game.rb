@@ -47,16 +47,17 @@ class Game < ActiveRecord::Base
     end
   end
 
-  def self.send_game_reminders(min_num_of_players = MIN_NUM_OF_PLAYERS)
+  def self.send_game_reminders
     tomorrow = Time.now + 1.day
     tomorrow_games = Game.where('time > ? and time < ?', tomorrow.beginning_of_day, tomorrow.end_of_day)
 
     tomorrow_games.each do |game|
       game_players = game.players
 
-      if game_players.size >= min_num_of_players
+      if game_players.size >= MIN_NUM_OF_PLAYERS
         game_players.each_with_index do |player, index|
-          GameReminderMailer.reminder_email(player, game, (index + 1) > min_num_of_players).deliver
+          is_reserve = PlayerGame.is_reserve_player?(index, game_players.size)
+          GameReminderMailer.reminder_email(player, game, is_reserve).deliver
         end
       end
 

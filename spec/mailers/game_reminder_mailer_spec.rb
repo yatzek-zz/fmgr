@@ -17,8 +17,7 @@ describe 'GameReminderMailer' do
       mail = GameReminderMailer.reminder_email(szlachta, game, false)
       mail_body = mail.body.encoded
       expect(mail_body).to include 'Do not forget your kit, please.'
-      expect(mail_body).to include '&pound;3.80 change very much appreciated!'
-      expect(mail_body).to include 'Please note that if you <b>cancel on the day</b> of the game and there are no subs, you are expected to pay.'
+      expect(mail_body).to include 'Note that if you <b>cancel on the day</b> of the game and there are no subs, you are expected to pay.'
       expect(mail_body).not_to include 'You are reserve player for this game.'
       expect(mail_body).not_to include 'Please bring your kit in case someone drops out.'
     end
@@ -27,7 +26,6 @@ describe 'GameReminderMailer' do
       mail = GameReminderMailer.reminder_email(szlachta, game, true)
       mail_body = mail.body.encoded
       expect(mail_body).not_to include 'Do not forget your kit, please.'
-      expect(mail_body).not_to include '&pound;3.80 change very much appreciated!'
       expect(mail_body).to include 'You are reserve player for this game.'
       expect(mail_body).to include 'Please bring your kit in case someone drops out.'
     end

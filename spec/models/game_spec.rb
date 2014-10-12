@@ -64,18 +64,17 @@ describe 'Game' do
       Timecop.freeze time_14_10_2013_15_00
       game_definition = create(:game_definition)
       game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
-      iniesta = create(:iniesta)
-      szlachta = create(:szlachta)
-      create(:player_game, player: iniesta, game: game)
-      create(:player_game, player: szlachta, game: game)
+
+      10.times do
+        create(:player_game, player: create(:iniesta), game: game)
+      end
 
       # using double here to test reserve flag is being passed correctly to the mailer
       mail_double = double()
-      expect(mail_double).to receive(:deliver).twice
-      expect(GameReminderMailer).to receive(:reminder_email).with(iniesta, game, false).and_return(mail_double)
-      expect(GameReminderMailer).to receive(:reminder_email).with(szlachta, game, true).and_return(mail_double)
+      expect(mail_double).to receive(:deliver).exactly(10).times
+      expect(GameReminderMailer).to receive(:reminder_email).with(anything, game, false).exactly(10).times.and_return(mail_double)
 
-      Game.send_game_reminders(1)
+      Game.send_game_reminders
     end
 
     it 'does not send reminder emails to players for games already played' do
@@ -88,7 +87,7 @@ describe 'Game' do
       szlachta = create(:szlachta)
       create(:player_game, player: szlachta, game: game)
 
-      Game.send_game_reminders(1)
+      Game.send_game_reminders
       expect(email_deliveries).to be_empty
     end
 
@@ -102,7 +101,7 @@ describe 'Game' do
       szlachta = create(:szlachta)
       create(:player_game, player: szlachta, game: game)
 
-      Game.send_game_reminders(1)
+      Game.send_game_reminders
       expect(email_deliveries).to be_empty
     end
 
