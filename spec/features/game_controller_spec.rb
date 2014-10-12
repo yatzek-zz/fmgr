@@ -37,7 +37,7 @@ feature GameController do
 
     visit '/games'
 
-    click_link('Delete')
+    click_link('remove')
     expect(page).to have_content("jacek.szlachta@gmail.com has been removed - game on #{game_1.time_formatted}")
 
   end
