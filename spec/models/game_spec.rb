@@ -107,6 +107,82 @@ describe 'Game' do
 
   end
 
+  describe 'has periodic payment reminder job which' do
+
+    after(:each) { Timecop.return }
+
+    it 'sends payment reminder emails to players for games played that day' do
+      time_15_10_2013_15_00 = Time.local(2013, 10, 15, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_15_10_2013_15_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
+
+      10.times do
+        create(:player_game, player: create(:iniesta), game: game)
+      end
+
+      # using double here to test reserve flag is being passed correctly to the mailer
+      mail_double = double
+      expect(mail_double).to receive(:deliver).exactly(10).times
+      expect(PaymentReminderMailer).to receive(:payment_reminder_email).with(anything, game, '£3.80').exactly(10).times.and_return(mail_double)
+
+      Game.send_payment_reminders
+    end
+
+    it 'reserve players should not receive any email' do
+      time_15_10_2013_15_00 = Time.local(2013, 10, 15, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_15_10_2013_15_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
+
+      11.times do
+        create(:player_game, player: create(:iniesta), game: game)
+      end
+
+      # using double here to test reserve flag is being passed correctly to the mailer
+      mail_double = double
+      expect(mail_double).to receive(:deliver).exactly(10).times
+      expect(PaymentReminderMailer).to receive(:payment_reminder_email).with(anything, game, '£3.80').exactly(10).times.and_return(mail_double)
+
+      Game.send_payment_reminders
+    end
+
+    it 'emails are not sent if the minimum number of players is not met' do
+      time_15_10_2013_15_00 = Time.local(2013, 10, 15, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_15_10_2013_15_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_12_00)
+
+      9.times do
+        create(:player_game, player: create(:iniesta), game: game)
+      end
+
+      Game.send_payment_reminders
+      expect(email_deliveries).to be_empty
+    end
+
+    it 'does not send reminder emails to players for games not yet played' do
+      time_15_10_2013_15_00 = Time.local(2013, 10, 15, 15, 0, 0)
+      time_15_10_2013_12_00 = Time.local(2013, 10, 15, 12, 0, 0)
+
+      Timecop.freeze time_15_10_2013_12_00
+      game_definition = create(:game_definition)
+      game = create(:game, game_definition: game_definition, time: time_15_10_2013_15_00)
+      szlachta = create(:szlachta)
+      create(:player_game, player: szlachta, game: game)
+
+      Game.send_payment_reminders
+      expect(email_deliveries).to be_empty
+    end
+
+  end
+
   context 'scopes' do
 
     before(:all) do
@@ -155,6 +231,58 @@ describe 'Game' do
         expect(all_by_date.third.time).to eq @time_10_01_2013_11_00
       end
     end
+  end
+
+  context 'price per player is' do
+
+    it '£3.80 for 10 players' do
+      expect(Game.price_per_player(10)).to eq '£3.80'
+    end
+
+    it '£3.20 for 12 players' do
+      expect(Game.price_per_player(12)).to eq '£3.20'
+    end
+
+    it '£2.80 for 14 players' do
+      expect(Game.price_per_player(14)).to eq '£2.80'
+    end
+
+  end
+
+  context 'number of players that actually played (excludes reserve players)' do
+
+    it 'raises an error when less than 10' do
+      (1..9).each do |num_subscribed|
+        expect{Game.num_of_playing_players(num_subscribed)}.to raise_error 'Num of players has to be grater or equal 10!'
+      end
+    end
+
+    it 'is 10 if there are 10 players on the list' do
+      expect(Game.num_of_playing_players(10)).to eq 10
+    end
+
+    it 'is 10 if there are 11 players on the list' do
+      expect(Game.num_of_playing_players(11)).to eq 10
+    end
+
+    it 'is 12 if there are 12 players on the list' do
+      expect(Game.num_of_playing_players(12)).to eq 12
+    end
+
+    it 'is 12 if there are 13 players on the list' do
+      expect(Game.num_of_playing_players(13)).to eq 12
+    end
+
+    it 'is 14 if there are 14 players on the list' do
+      expect(Game.num_of_playing_players(14)).to eq 14
+    end
+
+    it 'is 14 if there are more than 14 players on the list' do
+      (15..20).each do |num_subscribed|
+        expect(Game.num_of_playing_players(num_subscribed)).to eq 14
+      end
+    end
+
   end
 
 
