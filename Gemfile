@@ -47,7 +47,7 @@ group :development, :test do
   #
 
   # guard + spork
-  gem 'rb-inotify'
+  gem 'rb-inotify', require: false
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-livereload'
