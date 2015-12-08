@@ -1,20 +1,15 @@
 development:
+  host: localhost
   adapter: postgresql
-#  adapter: em_postgresql
-#  adapter: empostgresql
-  encoding: unicode
-  database: fmgr
-  username: jacek
-  password:
+  database: fmgr_development
+  encoding: utf8
   pool: 5
   timeout: 5000
 
 test:
   adapter: postgresql
-  encoding: unicode
   database: fmgr_test
-  username: jacek
-  password:
+  encoding: utf8
   pool: 5
   timeout: 5000
 
