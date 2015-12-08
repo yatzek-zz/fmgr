@@ -1,4 +1,0 @@
-{<img src="https://travis-ci.org/yatzek/fmgr.png" />}[https://travis-ci.org/yatzek/fmgr]
-
-
-Tuesday footaball manager app: http://fmgr.herokuapp.com/
