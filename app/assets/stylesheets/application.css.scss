@@ -2,6 +2,19 @@
 @import "bootstrap";
 @import "dataTables/bootstrap/3/jquery.dataTables.bootstrap";
 
+$casal: #296172;
+$bali-hai: #89A4AD;
+$white: #fff;
+
+header {
+  padding: 30px;
+  margin: 0;
+  color: $white;
+  font-size: 36px;
+  background: $casal;
+  border-bottom: 7px solid $bali-hai;
+}
+
 .warn {
   color: red;
 }

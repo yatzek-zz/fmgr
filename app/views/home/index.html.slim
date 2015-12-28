@@ -1,12 +1,9 @@
-- if !@games_to_play.empty?
-
+- unless @games_to_play.empty?
   - @games_to_play.each do |game|
-    h1 Game on #{game.time_formatted}
+    h2 Next game on #{game.time_formatted}
     p Players
     ol
       - game.players.andand.each_with_index do |player, index|
         li class="#{player_class_for_index(index, game.players.size)}" = player.email
-
 - else
-
-  h1 No games yet
+  h2 No games scheduled yet

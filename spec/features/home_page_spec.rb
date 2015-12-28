@@ -3,7 +3,7 @@ feature 'Home page' do
 
     scenario 'visit root url - no game yet' do
       visit root_url
-      expect(page).to have_content 'No games yet'
+      expect(page).to have_content 'No games scheduled yet'
     end
 
     scenario 'visit root url - next game found' do
@@ -16,7 +16,7 @@ feature 'Home page' do
 
       visit root_url
 
-      expect(page).to have_content 'Game on Tuesday 29-Jan-2013 12:00'
+      expect(page).to have_content 'Next game on Tuesday 29-Jan-2013 12:00'
       expect(page).to have_content 'Players'
       Timecop.return
     end
