@@ -1,4 +1,3 @@
-
 describe 'PlayerMailer' do
 
   describe 'notification_email' do

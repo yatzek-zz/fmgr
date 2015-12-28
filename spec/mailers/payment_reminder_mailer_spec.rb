@@ -1,4 +1,3 @@
-
 describe 'PaymentReminderMailer' do
 
   describe 'payment_reminder_email' do

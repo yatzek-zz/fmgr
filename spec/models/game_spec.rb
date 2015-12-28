@@ -190,9 +190,11 @@ describe 'Game' do
       @time_10_01_2013_13_00 = Time.local(2013, 1, 10, 13, 0, 0)
       @time_17_01_2013_13_00 = Time.local(2013, 1, 17, 13, 0, 0)
     end
+
     after(:each) { Timecop.return }
 
     describe 'future_by_date scope' do
+
       it 'shows only future games' do
         Timecop.freeze @time_10_01_2013_13_00
         game_definition = create(:game_definition)
@@ -214,9 +216,11 @@ describe 'Game' do
         expect(future_games.first.time).to eq @time_10_01_2013_13_00
         expect(future_games.last.time).to eq @time_17_01_2013_13_00
       end
+
     end
 
     describe 'all_by_date scope' do
+
       it 'ordered by date with the closest game at the top of the list' do
         game_definition = create(:game_definition)
         create(:game, game_definition: game_definition, time: @time_10_01_2013_11_00)
@@ -230,7 +234,9 @@ describe 'Game' do
         expect(all_by_date.second.time).to eq @time_10_01_2013_13_00
         expect(all_by_date.third.time).to eq @time_10_01_2013_11_00
       end
+
     end
+
   end
 
   context 'price per player is' do
@@ -284,6 +290,5 @@ describe 'Game' do
     end
 
   end
-
 
 end

@@ -1,5 +1,5 @@
-
 FactoryGirl.define do
+
   factory :messi, class: 'Player' do
     name 'Leo'
     surname 'Messi'
@@ -17,4 +17,5 @@ FactoryGirl.define do
     surname 'Szlachta'
     email 'jacek.szlachta@gmail.com'
   end
+
 end

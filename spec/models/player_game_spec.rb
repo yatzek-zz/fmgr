@@ -1,4 +1,3 @@
-
 describe PlayerGame do
 
   let(:game) {create :game}
@@ -69,8 +68,6 @@ describe PlayerGame do
 
     end
 
-
   end
-
 
 end

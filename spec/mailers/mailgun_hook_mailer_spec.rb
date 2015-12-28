@@ -1,4 +1,3 @@
-
 describe 'MailgunHookMailer' do
 
   describe 'not_delivered' do

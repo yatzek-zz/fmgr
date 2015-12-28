@@ -1,4 +1,3 @@
-
 feature 'PlayerGame' do
 
   context 'subscribe' do

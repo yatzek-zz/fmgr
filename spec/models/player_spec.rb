@@ -1,4 +1,3 @@
-
 describe 'Player' do
 
   it 'has a valid factory' do

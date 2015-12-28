@@ -1,4 +1,3 @@
-
 feature 'Home page' do
 
     scenario 'visit root url - no game yet' do

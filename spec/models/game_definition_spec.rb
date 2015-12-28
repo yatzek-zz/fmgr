@@ -1,4 +1,3 @@
-
 describe 'GameDefinition' do
 
   it 'has a valid factory' do
