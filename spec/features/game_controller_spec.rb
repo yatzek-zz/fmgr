@@ -17,10 +17,10 @@ feature GameController do
 
     visit '/games'
 
-    expect(page).to have_content 'Game on Tuesday 22-Jan-2013 12:00'
+    expect(page).to have_content 'Game on Tuesday 22 Jan 2013 at 12:00'
     expect(page).to have_content 'leo.messi'
 
-    expect(page).to have_content 'Game on Tuesday 29-Jan-2013 12:00'
+    expect(page).to have_content 'Game on Tuesday 29 Jan 2013 at 12:00'
     expect(page).to have_content 'anders.iniesta'
   end
 

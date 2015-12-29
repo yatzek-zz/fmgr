@@ -8,7 +8,7 @@ describe 'GameReminderMailer' do
     it 'renders the headers' do
       mail = GameReminderMailer.reminder_email(szlachta, game, false)
 
-      expect(mail.subject).to eq 'Footie reminder - game on Tuesday 29-Jan-2013 12:00 at the Goals'
+      expect(mail.subject).to eq 'Footie reminder - game on Tuesday 29 Jan 2013 at 12:00 at the Goals'
       expect(mail.to).to eq [szlachta.email]
       expect(mail.from).to eq %w(noreply@fmgr.heroku.com)
     end

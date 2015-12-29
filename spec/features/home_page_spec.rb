@@ -15,7 +15,7 @@ feature 'Home page' do
 
       visit root_url
 
-      expect(page).to have_content 'Next game on Tuesday 29-Jan-2013 12:00'
+      expect(page).to have_content 'Next game on Tuesday 29 Jan 2013 at 12:00'
       expect(page).to have_content 'Players'
       Timecop.return
     end

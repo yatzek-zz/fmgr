@@ -8,7 +8,7 @@ describe 'PaymentReminderMailer' do
     it 'renders the headers' do
       mail = PaymentReminderMailer.payment_reminder_email(szlachta, game, '£3.80')
 
-      expect(mail.subject).to eq 'Footie payment reminder - game on Tuesday 29-Jan-2013 12:00'
+      expect(mail.subject).to eq 'Footie payment reminder - game on Tuesday 29 Jan 2013 at 12:00'
       expect(mail.to).to eq [szlachta.email]
       expect(mail.from).to eq %w(noreply@fmgr.heroku.com)
     end

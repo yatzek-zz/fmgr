@@ -13,7 +13,7 @@
 class Game < ActiveRecord::Base
 
   #e.g. Thursday 10-Jan-2013 08:00
-  TIME_FORMAT = '%A %d-%b-%Y %H:%M'
+  TIME_FORMAT = '%A %d %b %Y at %H:%M'
   MIN_NUM_OF_PLAYERS = 10
 
   validates :time, :game_definition, :presence => true

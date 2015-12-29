@@ -5,6 +5,11 @@
 $casal: #296172;
 $bali-hai: #89A4AD;
 $white: #fff;
+$bright-turquoise: #10BFF5;
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
 
 header {
   padding: 30px;
@@ -15,12 +20,18 @@ header {
   border-bottom: 7px solid $bali-hai;
 }
 
+ol {
+  li {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
 .warn {
   color: red;
 }
 
 .base-player {
-  color: green;
+  color: $bright-turquoise;
 }
 
 .reserve-player {
