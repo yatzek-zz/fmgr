@@ -4,6 +4,6 @@
     h3 Players
     ol
       - game.players.andand.each_with_index do |player, index|
-        li class="#{player_class_for_index(index, game.players.size)}" = player.email
+        li class="#{player_class_for_index(index, game.players.size)}" = player.timesheet_name
 - else
   h2 No games scheduled yet

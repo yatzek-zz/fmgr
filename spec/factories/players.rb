@@ -18,4 +18,9 @@ FactoryGirl.define do
     email 'jacek.szlachta@gmail.com'
   end
 
+  factory :player, class: 'Player' do
+    name 'Leo'
+    surname 'Messi'
+    sequence(:email) {|i| "leo.messi#{i}@example.com" }
+  end
 end
