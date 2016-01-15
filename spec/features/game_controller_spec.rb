@@ -18,10 +18,10 @@ feature GameController do
     visit '/games'
 
     expect(page).to have_content 'Game on Tuesday 22 Jan 2013 at 12:00'
-    expect(page).to have_content 'leo.messi'
+    expect(page).to have_content 'Leo Messi'
 
     expect(page).to have_content 'Game on Tuesday 29 Jan 2013 at 12:00'
-    expect(page).to have_content 'anders.iniesta'
+    expect(page).to have_content 'Anders Iniesta'
   end
 
   scenario 'allows to remove players from games' do
@@ -38,7 +38,7 @@ feature GameController do
     visit '/games'
 
     click_link('remove')
-    expect(page).to have_content("jacek.szlachta@gmail.com has been removed - game on #{game_1.time_formatted}")
+    expect(page).to have_content("Jacek Szlachta has been removed - game on #{game_1.time_formatted}")
 
   end
 

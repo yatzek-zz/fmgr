@@ -8,7 +8,7 @@ feature 'PlayerGame' do
       link_hash = LinkUtils.url_encode(LinkUtils.create_link_hash(messi.id, game.id))
 
       expect { visit "#{LinkUtils::SUBSCRIBE_PATH}/#{link_hash}" }.to change(PlayerGame, :count).by(1)
-      expect(page).to have_content(/leo\.messi\d*@example\.com has been added/)
+      expect(page).to have_content(/Leo Messi has been added/)
       expect(page).not_to have_content('Wrong link? This game has already been played!')
     end
 
