@@ -64,6 +64,8 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     colored (1.2)
+    d3-rails (3.5.11)
+      railties (>= 3.1)
     daemons (1.1.9)
     data_table (0.4.14)
       rails (>= 3.0)
@@ -288,6 +290,7 @@ DEPENDENCIES
   capybara
   chronic
   coffee-rails
+  d3-rails
   data_table
   database_cleaner
   encryptor

@@ -27,6 +27,7 @@ gem 'data_table'
 gem 'will_paginate'
 gem 'andand'
 gem 'attribute-defaults'
+gem 'd3-rails'
 
 group :production do
   gem 'rails_12factor'
@@ -44,7 +45,6 @@ group :development, :test do
   #gem 'better_errors'
   #gem 'binding_of_caller'
   #gem 'bullet'
-  #
 
   # guard + spork
   gem 'rb-inotify', require: false
