@@ -41,6 +41,16 @@ describe 'Player' do
         expect(player.teamsheet_name).to eq('Leo Messi')
       end
 
+      context 'when surname has a - (hyphen) in the surname' do
+
+        it 'should capitalize the words separated by hyphen' do
+          player = build(:player, name: 'leo', surname: 'messi-rooney')
+
+          expect(player.teamsheet_name).to eq('Leo Messi-Rooney')
+        end
+
+      end
+
       context 'when has just name missing' do
 
         it 'returns email address if name is nil' do

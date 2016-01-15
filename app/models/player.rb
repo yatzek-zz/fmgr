@@ -21,8 +21,18 @@ class Player < ActiveRecord::Base
   scope :sorted, -> { order('name, surname ASC') }
 
   def teamsheet_name
+    result = ''
+
     unless name.blank? || surname.blank?
-      return "#{name.capitalize} #{surname.capitalize}"
+      result = "#{name.capitalize} "
+
+      if surname.include? '-'
+        result << surname.split('-').map(&:capitalize).join('-')
+      else
+        result << surname.capitalize
+      end
+
+      return result
     end
 
     email
