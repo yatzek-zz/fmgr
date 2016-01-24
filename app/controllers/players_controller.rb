@@ -1,6 +1,9 @@
 require_relative "application_controller"
 
 class PlayersController < ApplicationController
+
+  before_action :authenticate!
+
   # GET /players
   # GET /players.json
   def index

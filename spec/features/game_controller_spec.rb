@@ -1,7 +1,9 @@
 feature GameController do
 
   scenario 'visit root url - next game found' do
+    basic_auth('test', 'test')
 
+    visit '/games'
     time_22_01_2013_12_00 = Time.local(2013, 1, 22, 12, 0, 0)
     time_29_01_2013_12_00 = Time.local(2013, 1, 29, 12, 0, 0)
 
@@ -25,6 +27,7 @@ feature GameController do
   end
 
   scenario 'allows to remove players from games' do
+    basic_auth('test', 'test')
 
     time_22_01_2013_12_00 = Time.local(2013, 1, 22, 12, 0, 0)
 
@@ -39,7 +42,6 @@ feature GameController do
 
     click_link('remove')
     expect(page).to have_content("Jacek Szlachta has been removed - game on #{game_1.time_formatted}")
-
   end
 
 end

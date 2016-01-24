@@ -14,6 +14,9 @@ Spork.prefork do
 
   puts "Rails env: #{ENV['RAILS_ENV']}"
 
+  ENV['ADMIN_USERNAME'] = 'test'
+  ENV['ADMIN_PASSWORD'] = 'test'
+
   require 'rails/application'
   #Spork.trap_method(Rails::Application, :reload_routes!) # Rails 3.0
   Spork.trap_method(Rails::Application::RoutesReloader, :reload!) # Rails 3.1+
@@ -79,6 +82,8 @@ Spork.prefork do
     config.after(:each) do
       DatabaseCleaner.clean
     end
+
+    config.include BasicAuth
 
     config.include MailerMacros
     config.before(:each){reset_email}
