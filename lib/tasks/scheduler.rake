@@ -25,10 +25,10 @@ task :send_notification_emails => :environment do
   Game.send_notification_emails
 end
 
-desc 'send game reminders - at 15:00 on a day before the game'
-task :send_game_reminders => :environment do
-  Game.send_game_reminders
-end
+#desc 'send game reminders - at 15:00 on a day before the game'
+#task :send_game_reminders => :environment do
+#  Game.send_game_reminders
+#end
 
 desc 'sends payment reminder - at 16:00 on the day the game took place'
 task :send_payment_reminders => :environment do
