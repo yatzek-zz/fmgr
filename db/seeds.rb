@@ -13,7 +13,8 @@ require 'game_definition'
 
 GameDefinition.delete_all
 
-GameDefinition.create!(day: 'tue', time: '12:00')
+GameDefinition.create!(day: 'tue', time: '12:00', disabled: true)
+GameDefinition.create!(day: 'wed', time: '12:00')
 GameDefinition.create!(day: 'thu', time: '12:00', disabled: true)
 
 #Player.delete_all
